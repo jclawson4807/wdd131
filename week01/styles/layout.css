@@ -12,11 +12,21 @@
     --footer-height: 8em;
 }
 
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
+} */
+
 body {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     display: grid;
     grid-template: auto / 4fr 1fr / auto;
+}
+
+p {
+    margin: 15px;
 }
 
 header,
@@ -36,12 +46,14 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: center;
     height: 2.3em;
+    justify-items: baseline;
 }
 
 nav a {
-    font-weight: bold;
-    font-size: 1em;
+    font-weight: 100;
+    font-size: 0.8em;
     text-align: center;
     color: var(--nav-text-color);
     text-decoration: none;
@@ -63,4 +75,10 @@ aside {
 
 footer {
     height: var(--footer-height);
+}
+
+footer p {
+    width: 100%;
+    margin: 15px auto;
+    text-align: center;
 }
