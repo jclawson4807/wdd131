@@ -3,10 +3,8 @@
     --nav-background-color: #000000;
     --main-background-color: #cccccc;
     --aside-background-color: #ffffff;
-    --header-footer-text-color: #f5f5f5;
-    --nav-text-color: #f8f8f8;
-    --main-text-color: #464646;
-    --aside-text-color: #0c0c0c;
+    --header-footer-nav-text-color: #fff;
+    --main-aside-text-color: #000;
     --header-height: 7.15em;
     --nav-height: 2.3em;
     --main-aside-height: 13.2em;
@@ -34,7 +32,7 @@ p {
 header,
 footer {
     background-color: var(--header-footer-background-color);
-    color: var(--header-footer-text-color);
+    color: var(--header-footer-nav-text-color);
     grid-column: 1/6;
 }
 
@@ -56,20 +54,20 @@ nav a {
     font-weight: 100;
     font-size: 0.75em;
     text-align: center;
-    color: var(--nav-text-color);
+    color: var(--header-footer-nav-text-color);
     text-decoration: none;
     font-family: var(--nav-font), sans-serif;
 }
 
 main {
     background-color: var(--main-background-color);
-    color: var(--main-text-color);
+    color: var(--main-aside-text-color);
     grid-column: 1/5;
 }
 
 aside {
     background-color: var(--aside-background-color);
-    color: var(--aside-text-color);
+    color: var(--main-aside-text-color);
     grid-column: 5/6;
     height: var(--main-aside-height);
 }
