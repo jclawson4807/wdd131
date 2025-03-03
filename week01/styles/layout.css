@@ -24,7 +24,7 @@ body {
     margin: 0;
     padding: 0px;
     display: grid;
-    grid-template: auto / 4fr 1fr / auto;
+    grid-template-rows: var(--header-height) var(--main-aside-height) var(--footer-height);
 }
 
 p {
@@ -36,11 +36,6 @@ footer {
     background-color: var(--header-footer-background-color);
     color: var(--header-footer-text-color);
     grid-column: 1/6;
-}
-
-header {
-    height: var(--header-height);
-    /* consider using a grid layout in header - main text is one section and nav is another - auto then 1 fr */
 }
 
 .header_content {
@@ -70,7 +65,6 @@ main {
     background-color: var(--main-background-color);
     color: var(--main-text-color);
     grid-column: 1/5;
-    height: var(--main-aside-height);
 }
 
 aside {
@@ -78,10 +72,6 @@ aside {
     color: var(--aside-text-color);
     grid-column: 5/6;
     height: var(--main-aside-height);
-}
-
-footer {
-    height: var(--footer-height);
 }
 
 footer p {
