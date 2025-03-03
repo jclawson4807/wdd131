@@ -4,12 +4,12 @@
     --header-font-size: 1.5em;
     --nav-background-color: #000000;
     --main-background-color: #cccccc;
-    --aside-background-color: #ffffff;
+    --card-background-color: #ffffff;
     --header-footer-nav-text-color: #fff;
     --main-aside-text-color: #000;
     --header-height: 7.15em;
     --nav-height: 3em;
-    --main-aside-height: 13.2em;
+    --main-height: 13.2em;
     --footer-height: 8.2em;
     --nav-font: Arial;
 }
@@ -24,7 +24,7 @@ body {
     margin: 0;
     padding: 0px;
     display: grid;
-    grid-template-rows: var(--header-height) var(--main-aside-height) var(--footer-height);
+    grid-template-rows: var(--header-height) var(--main-height) var(--footer-height);
 }
 
 p {
@@ -73,14 +73,34 @@ nav a {
 main {
     background-color: var(--main-background-color);
     color: var(--main-aside-text-color);
-    grid-column: 1/5;
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
 }
 
-aside {
-    background-color: var(--aside-background-color);
-    color: var(--main-aside-text-color);
-    grid-column: 5/6;
-    height: var(--main-aside-height);
+.card {
+    background-color: var(--card-background-color);
+    border: 1px solid var(--nav-background-color);
+}
+
+.card h2 {
+    color: var(--header-footer-nav-text-color);
+    
+}
+
+.card .devResources {}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+.card div a {
+    text-decoration: none;
+
 }
 
 footer p {
