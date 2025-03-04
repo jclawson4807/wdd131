@@ -3,15 +3,17 @@
     --header-font: Arial;
     --header-font-size: 1.5em;
     --nav-background-color: #000000;
-    --main-background-color: #cccccc;
-    --card-background-color: #ffffff;
+    --main-and-card-background-color: #ffffff;
     --header-footer-nav-text-color: #fff;
     --main-aside-text-color: #000;
     --header-height: 7.15em;
     --nav-height: 3em;
-    --main-height: 13.2em;
+    --main-height: 53.2em;
     --footer-height: 8.2em;
     --nav-font: Arial;
+    --card-header-height: 3em;
+    --about-me-div-height: 5em;
+    --country-info-div-height: 10em;
 }
 
 /* *,
@@ -71,7 +73,7 @@ nav a {
 }
 
 main {
-    background-color: var(--main-background-color);
+    background-color: var(--main-and-card-background-color);
     color: var(--main-aside-text-color);
     grid-column: 1/6;
     display: grid;
@@ -79,25 +81,52 @@ main {
 }
 
 .card {
-    background-color: var(--card-background-color);
+    background-color: var(--main-and-card-background-color);
     border: 1px solid var(--nav-background-color);
+    border-radius: 15px;
     margin: 20px;
+}
+
+.cardHeaderDiv {
+    color: var(--header-footer-nav-text-color);
+    background-color: var(--header-footer-background-color);
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 15px 15px 0 0;
 }
 
 .card h2 {
     color: var(--header-footer-nav-text-color);
-
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
 }
 
-.card .devResources {}
+.aboutMeCard {
+    padding: 0px;
+    display: grid;
+    grid-template-rows: var(--card-header-height) var(--about-me-div-height) var(--country-info-div-height);
+}
 
-.card div {
+.aboutMeDiv {
+    padding: 10px;
+    /* height: var(--about-me-div-height); */
+}
+
+.countryInfoDiv {
+    padding: 10px;
+    /* height: var(--country-info-div-height); */
+}
+
+/* .card div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: start;
-}
+} */
 
 .card div a {
     text-decoration: none;
