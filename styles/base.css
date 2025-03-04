@@ -129,6 +129,7 @@ main {
     width: 100%;
     text-align: center;
     margin: 25px 0 0px;
+    font-family: var(--header-font), sans-serif;
 }
 
 .countryInfoDiv hr {
@@ -160,9 +161,17 @@ main {
     font-style: italic;
 }
 
-.card div a {
-    text-decoration: none;
+.devResourcesDiv {
+    height: calc(var(--main-height) - var(--card-header-height));
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
+.card ul a {
+    text-decoration: none;
 }
 
 footer p {
