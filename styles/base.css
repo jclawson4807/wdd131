@@ -137,18 +137,28 @@ main {
     margin: 0 10% 20px 10%;
 }
 
+.countryInfoDiv p {
+    padding: 0px;
+    margin: 0 15px 0 15px;
+    text-align: justify;
+}
+
 .aboutMauritius {
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
 
-/* .card div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: start;
-} */
+.aboutMauritius .flagInfo {
+    padding: 0;
+    margin: 20px 10px 0px 10px;
+}
+
+.flagInfo p {
+    margin: 10px;
+    font-size: .7em;
+    font-weight: 300;
+    font-style: italic;
+}
 
 .card div a {
     text-decoration: none;
