@@ -10,6 +10,7 @@
     --header-height: 7.15em;
     --nav-height: 3em;
     --main-height: 31em;
+    --main-max-width: 120em;
     --footer-height: 8.2em;
     --nav-font: Arial;
     --card-height: 28em;
@@ -75,11 +76,14 @@ nav a {
 }
 
 main {
+    position: relative;
     background-color: var(--main-and-card-background-color);
     color: var(--main-aside-text-color);
     grid-column: 1/6;
     display: grid;
     grid-template-columns: 4fr 2fr;
+    max-width: var(--main-max-width);
+    margin: auto;
 }
 
 .card {
