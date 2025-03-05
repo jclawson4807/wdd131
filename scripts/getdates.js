@@ -14,4 +14,4 @@ let modified_date_str = last_modified_month.toLocaleString('en-US',
                     { minimumIntegerDigits: 2, useGrouping: false })
 
 footer_year_span.innerHTML = todays_date.getFullYear();
-last_modified_date_paragraph.innerHTML = `<span class="highlight">Last Modification: ${modified_date_str}`;
+last_modified_date_paragraph.innerHTML = `<span class="highlight">Last Modification: ${modified_date_str}</span>`;
