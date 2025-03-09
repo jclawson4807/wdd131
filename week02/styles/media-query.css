@@ -1,22 +1,30 @@
 :root {
     --background-color-byu-blue: #002E5D;
     --background-color-byu-blue-secondary: #0047BA;
-}
-
-* {
-    margin: 0;
-    padding: 0px;
+    --padding: 1rem
 }
 
 body {
-    font-family: roboto;
+    font-family: 'Roboto', sans-serif;
 }
 
 header,
 main,
 footer {
+    padding: var(--padding);
     max-width: 640px;
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.050);
-    background-color: var(--background-color-byu-blue);
+    background-color: var(--background-color-byu-blue-secondary);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: var(--padding);
+    background-color: white;
 }
