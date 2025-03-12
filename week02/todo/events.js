@@ -40,6 +40,8 @@ function newTask() {
     tasks.push(todoObject);
 
     todoInput.value = "";
+    todoInput.focus();
+
     renderTasks(tasks);
 }
 
