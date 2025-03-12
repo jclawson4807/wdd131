@@ -1,18 +1,22 @@
 // events.js
 let tasks = [];
 
+const submitButton = document.querySelector("#submitTask");
+const taskList = document.querySelector("#todoList");
+
 function renderTasks(tasks) {
     // get the list element from the DOM
     // loop through the tasks array. transform (map) each task object into the appropriate HTML to represent a to-do.
 
-    const taskList = document.querySelector("#todoList");
+    // clear the inner HTML first so we don't keep appending to it
+    taskList.innerHTML = "";
 
     for (const task of tasks) {
         const newLi = `<li ${task.completed ? 'class="strike"' : ""}>
    <p>${task.detail}</p>
    <div>
-     <span data-function="delete">❎</span>
-     <span data-function="complete">✅</span>
+     <span data-action="delete">❎</span>
+     <span data-action="complete">✅</span>
    </div>
  </li>`;
 
@@ -35,6 +39,7 @@ function newTask() {
 
     tasks.push(todoObject);
 
+    todoInput.value = "";
     renderTasks(tasks);
 }
 
@@ -72,11 +77,23 @@ function manageTasks(event) {
 
     // because we added 'data-action="delete"' to each icon in a task we can access a dataset property on our target (e.target.dataset.action)
     // use that in a couple of if statements to decide whether to run removeTask or completeTask
+
+    const parentLi = event.target.closest("li");
+
+    const actionType = event.target.dataset.action;
+
+    if (actionType == "delete") {
+        removeTask(parentLi);
+    }
+    else if (actionType == "complete") {
+        completeTask(parentLi);
+    }
 }
 
 // Add your event listeners here
 // We need to attach listeners to the submit button and the list. Listen for a click, call the 'newTask' function on submit and call the 'manageTasks' function if either of the icons are clicked in the list of tasks
 
-const submitButton = document.querySelector("#submitTask");
+
 
 submitButton.addEventListener("click", newTask);
+taskList.addEventListener("click", manageTasks);
