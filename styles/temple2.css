@@ -113,12 +113,43 @@ nav {
     /* just a wayfinding symbol for the user */
 }
 
-.stuff {
-    margin: 0.5rem;
-    border: 1px solid rgb(0 0 0 / 0.1);
-    background-color: #bed;
-    max-width: 580px;
-    height: 100vh;
+main {
+    background-color: var(--main-and-card-background-color);
+    color: var(--main-aside-text-color);
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto;
+    gap: 1rem;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+figure {
+    background-color: var(--main-and-card-background-color);
+    border: 1px solid var(--nav-background-color);
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    color: var(--header-footer-background-color);
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    font-size: 0.75rem;
 }
 
 /* large view navigation ************************************/
