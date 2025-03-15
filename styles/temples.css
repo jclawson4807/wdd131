@@ -64,11 +64,11 @@ header {
 }
 
 header h1 {
-    width: 160px;
+    width: 200px;
 }
 
 nav {
-    width: calc(100% - 160px);
+    width: calc(100% - 200px);
 }
 
 nav ul {
@@ -86,36 +86,14 @@ nav ul a {
     display: block;
 }
 
-/* 
-
-
-
-nav ul {
-    
-    background-color: var(--nav-background-color);
-    justify-content: space-between;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    height: var(--nav-height);
-}
-
-nav a {
-    flex: 1 1 100%;
-    font-weight: 200;
-    font-size: 1em;
-    text-align: center;
-    color: var(--header-footer-nav-text-color);
-    text-decoration: none;
-    font-family: var(--nav-font), sans-serif;
-    display: block;
-}
-
 nav a:hover {
-    text-decoration: overline;
+    background-color: var(--header-footer-nav-text-color);
+    color: var(--header-footer-background-color);
 }
+
+/*
+
+
 
 .header_content {
     height: calc(var(--header-height) - 4.3em);
