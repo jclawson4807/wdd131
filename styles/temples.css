@@ -11,6 +11,7 @@
     --header-height: 7.15em;
     --nav-height: 3em;
     --main-max-width: 800px;
+    --main-min-width: 250px;
     --footer-height: 8.2em;
     --figure-height: 200px;
     --figure-width: 250px;
@@ -30,6 +31,7 @@ body {
     font-family: var(--body-font), serif;
     font-weight: 300;
     line-height: 1.7em;
+    min-width: var(--main-min-width);
 }
 
 main {
@@ -43,6 +45,7 @@ p {
 
 h1 {
     font-size: 1.5rem;
+    text-align: left;
 }
 
 header,
@@ -57,9 +60,6 @@ nav {
 header {
     padding: 20px;
     height: 65px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     font-family: var(--nav-font), sans-serif;
 }
 
@@ -67,16 +67,46 @@ header h1 {
     width: 200px;
 }
 
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--header-footer-nav-text-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
 nav {
     width: calc(100% - 200px);
     max-width: 600px;
+    /* display: none; */
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
 }
 
-nav ul {
+.navigation {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #333;
+    color: var(--header-footer-nav-text-color);
 }
 
 nav ul a {
+    display: none;
     flex: 1 1 100%;
     font-weight: 200;
     font-size: 1em;
@@ -84,12 +114,15 @@ nav ul a {
     color: var(--header-footer-nav-text-color);
     text-decoration: none;
     font-family: var(--nav-font), sans-serif;
-    display: block;
 }
 
 nav a:hover {
     background-color: var(--header-footer-nav-text-color);
     color: var(--header-footer-background-color);
+}
+
+.open a {
+    display: block;
 }
 
 main {
