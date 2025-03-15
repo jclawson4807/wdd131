@@ -34,44 +34,42 @@ body {
     min-width: var(--main-min-width);
 }
 
-main {
-    max-width: var(--main-max-width);
-    margin: 0 auto;
-}
-
-p {
-    margin: 15px;
-}
-
-h1 {
-    font-size: 1.5rem;
-    text-align: left;
-}
-
 header,
 footer,
 nav {
     background-color: var(--header-footer-background-color);
     color: var(--header-footer-nav-text-color);
-    margin: 0 auto;
-    padding: 0px;
 }
 
 header {
-    padding: 20px;
-    height: 65px;
-    font-family: var(--nav-font), sans-serif;
+    padding: 20px 20px 0px 20px;
 }
 
-header h1 {
-    width: 200px;
+h1 {
+    text-align: left;
+    font-family: times, serif;
+    font-size: 1.5rem;
+    margin-left: 1rem;
 }
 
+h2 {
+    font-size: 1.2rem;
+    color: navy;
+    text-align: left;
+    margin: 1rem;
+}
+
+nav {
+    max-width: 800px;
+    margin: 1rem auto;
+}
+
+/* small view navigation */
 #menu {
     font-size: 1.5rem;
     border: 0;
     background: none;
-    color: var(--header-footer-nav-text-color);
+    color: #000;
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -85,51 +83,42 @@ header h1 {
     content: "❌";
 }
 
-nav {
-    display: block;
-    width: 100%;
-    max-width: 600px;
-    padding: 1rem;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-}
-
 .navigation {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
     background-color: #333;
-    color: var(--header-footer-nav-text-color);
+    color: #fff;
 }
 
-nav ul {
-    list-style: none;
-}
-
-.navigation .open {
-    display: block;
-    z-index: 1;
-}
-
-nav ul a {
-    display: block;
-    flex: 1 1 100%;
-    font-weight: 200;
-    font-size: 1em;
+.navigation a {
+    display: none;
+    padding: 1rem;
     text-align: center;
-    color: var(--header-footer-nav-text-color);
     text-decoration: none;
-    font-family: var(--nav-font), sans-serif;
+    color: #fff;
 }
 
-nav a:hover {
-    background-color: var(--header-footer-nav-text-color);
-    color: var(--header-footer-background-color);
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
 }
 
 main {
+    max-width: var(--main-max-width);
+    margin: 0 auto;
     background-color: var(--main-and-card-background-color);
     color: var(--main-aside-text-color);
     margin: auto;
@@ -140,8 +129,7 @@ main {
     gap: 1rem;
 }
 
-main h1 {
-    /* width: 100%; */
+main h2 {
     text-align: center;
 }
 
@@ -169,13 +157,49 @@ figcaption {
     font-size: 0.75rem;
 }
 
-footer p {
-    width: 100%;
-    margin: 15px auto;
+footer {
+    padding: 10px;
     text-align: center;
     font-family: var(--header-font), sans-serif;
 }
 
+footer p {
+    width: 100%;
+    padding: 5px;
+}
+
 .highlight {
     color: var(--highlight-text-color);
+}
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .stuff {
+        margin: 1rem auto;
+    }
 }
