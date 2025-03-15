@@ -117,6 +117,8 @@ nav {
 }
 
 main {
+    max-width: var(--main-max-width);
+    margin: 0 auto;
     background-color: var(--main-and-card-background-color);
     color: var(--main-aside-text-color);
     margin: auto;
