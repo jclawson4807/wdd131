@@ -58,8 +58,8 @@ header {
     padding: 20px;
     height: 65px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: right;
     font-family: var(--nav-font), sans-serif;
 }
 
@@ -69,6 +69,7 @@ header h1 {
 
 nav {
     width: calc(100% - 200px);
+    max-width: 600px;
 }
 
 nav ul {
@@ -91,27 +92,9 @@ nav a:hover {
     color: var(--header-footer-background-color);
 }
 
-/*
-
-
-
-.header_content {
-    height: calc(var(--header-height) - 4.3em);
-}
-
-.header_content h1 {
-    width: 100%;
-    text-align: center;
-    margin: 1em auto;
-    font-family: var(--header-font), sans-serif;
-    font-size: var(--header-font-size);
-}
-
-*/
 main {
     background-color: var(--main-and-card-background-color);
     color: var(--main-aside-text-color);
-    /* max-width: var(--main-max-width); */
     margin: auto;
     padding: 20px;
     display: grid;
@@ -166,7 +149,6 @@ footer p {
         display: flex;
         flex-direction: row;
         width: 100%;
-        /* justify-content: space-around; */
     }
 
     nav ul li {
