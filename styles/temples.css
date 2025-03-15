@@ -27,10 +27,16 @@ nav {
     background-color: var(--header-footer-background-color);
     max-width: var(--page-max-width);
     margin: 0 auto;
+    padding: 0px;
+}
+
+ul {
+    padding-inline-start: 0px;
 }
 
 nav ul {
     list-style: none;
+    width: 100%;
 }
 
 nav a {
@@ -41,7 +47,22 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    border: 1px solid var(--header-footer-nav-text-color);
+}
+
 .active {
     color: var(--active-nav-color);
 }
 
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-around; */
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
