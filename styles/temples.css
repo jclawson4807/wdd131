@@ -1,12 +1,13 @@
 :root {
+    --body-font: Domine;
     --header-footer-background-color: #1d4d73;
+    --header-footer-nav-text-color: #fff;
+    /* 
     --header-font: Roboto;
     --header-font-size: 1.5em;
     --nav-background-color: #000000;
     --main-and-card-background-color: #ffffff;
-    --header-footer-nav-text-color: #fff;
     --main-aside-text-color: #000;
-    --body-font: Domine;
     --hr-color: #a3a3a3;
     --header-height: 7.15em;
     --nav-height: 3em;
@@ -15,7 +16,7 @@
     --figure-height: 200px;
     --figure-width: 250px;
     --nav-font: Roboto;
-    --highlight-text-color: #f3f437;
+    --highlight-text-color: #f3f437; */
 }
 
 body {
@@ -37,19 +38,21 @@ footer {
     color: var(--header-footer-nav-text-color);
 }
 
-.header_content {
-    height: calc(var(--header-height) - 4.3em);
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
 }
 
-.header_content h1 {
-    width: 100%;
-    text-align: center;
-    margin: 1em auto;
-    font-family: var(--header-font), sans-serif;
-    font-size: var(--header-font-size);
+header div {
+    flex-shrink: 1;
 }
 
 nav {
+    flex-grow: 2;
     background-color: var(--nav-background-color);
     display: flex;
     flex-direction: row;
@@ -72,6 +75,25 @@ nav a {
 nav a:hover {
     text-decoration: overline;
 }
+
+/* 
+
+
+
+
+.header_content {
+    height: calc(var(--header-height) - 4.3em);
+}
+
+.header_content h1 {
+    width: 100%;
+    text-align: center;
+    margin: 1em auto;
+    font-family: var(--header-font), sans-serif;
+    font-size: var(--header-font-size);
+}
+
+
 
 main {
     background-color: var(--main-and-card-background-color);
@@ -110,7 +132,7 @@ figure img {
 
 figcaption {
     color: var(--header-footer-background-color);
-    /* background-color: var(--header-footer-background-color); */
+    background-color: var(--header-footer-background-color);
     width: 100%;
     padding: 10px;
     margin: 0px;
@@ -136,3 +158,5 @@ footer p {
 .highlight {
     color: var(--highlight-text-color);
 }
+
+*/
