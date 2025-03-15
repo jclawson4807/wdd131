@@ -25,7 +25,20 @@
         flex: 1 1 100%;
     }
 
-    .stuff {
-        margin: 1rem auto;
+    main section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 640px) {
+    main section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
     }
 }
