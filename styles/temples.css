@@ -132,13 +132,7 @@ main {
 main h2 {
     text-align: center;
     color: var(--header-footer-background-color);
-}
-
-main section {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-column: span 1;
 }
 
 figure {
