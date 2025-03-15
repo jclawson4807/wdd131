@@ -15,3 +15,11 @@ let modified_date_str = last_modified_month.toLocaleString('en-US',
 
 footer_year_span.innerHTML = todays_date.getFullYear();
 last_modified_date_paragraph.innerHTML = `<span class="highlight">Last Modification: ${modified_date_str}</span>`;
+
+const button = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+button.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    button.classList.toggle('open');
+});

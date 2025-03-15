@@ -86,9 +86,9 @@ header h1 {
 }
 
 nav {
-    width: calc(100% - 200px);
+    display: block;
+    width: 100%;
     max-width: 600px;
-    /* display: none; */
     padding: 1rem;
     text-align: center;
     text-decoration: none;
@@ -96,7 +96,6 @@ nav {
 }
 
 .navigation {
-    list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -105,8 +104,17 @@ nav {
     color: var(--header-footer-nav-text-color);
 }
 
+nav ul {
+    list-style: none;
+}
+
+.navigation .open {
+    display: block;
+    z-index: 1;
+}
+
 nav ul a {
-    display: none;
+    display: block;
     flex: 1 1 100%;
     font-weight: 200;
     font-size: 1em;
@@ -119,10 +127,6 @@ nav ul a {
 nav a:hover {
     background-color: var(--header-footer-nav-text-color);
     color: var(--header-footer-background-color);
-}
-
-.open a {
-    display: block;
 }
 
 main {
