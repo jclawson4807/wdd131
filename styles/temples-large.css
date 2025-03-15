@@ -1,85 +1,31 @@
-@media (min-width: 500px) {
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
 
     #menu {
         display: none;
-    }
-
-    header,
-    footer,
-    nav {
-        background-color: var(--header-footer-background-color);
-        color: var(--header-footer-nav-text-color);
-        margin: 0 auto;
-        padding: 0px;
-    }
-
-    header {
-        padding: 20px;
-        height: 65px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        font-family: var(--nav-font), sans-serif;
-        min-width: 250px;
-    }
-
-    header h1 {
-        width: 200px;
-    }
-
-    nav {
-        width: calc(100% - 200px);
-        max-width: 600px;
-        display: block;
+        /* hide hamburger button */
     }
 
     .navigation {
-        list-style: none;
-        display: flex;
         flex-direction: row;
-        width: 100%;
-        background-color: var(--header-footer-background-color);
     }
 
-    nav ul a {
-        flex: 1 1 100%;
-        font-weight: 200;
-        font-size: 1em;
-        text-align: center;
-        color: var(--header-footer-nav-text-color);
-        text-decoration: none;
-        font-family: var(--nav-font), sans-serif;
+    .navigation a {
         display: block;
-    }
-
-    nav ul li {
         flex: 1 1 100%;
     }
 
-    main section {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-}
-
-@media (min-width: 640px) {
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-
-    nav ul li {
-        flex: 1 1 100%;
-    }
-
-    main section {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 20px;
+    .stuff {
+        margin: 1rem auto;
     }
 }
