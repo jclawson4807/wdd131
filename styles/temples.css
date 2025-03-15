@@ -63,12 +63,35 @@ header {
     font-family: var(--nav-font), sans-serif;
 }
 
+header h1 {
+    width: 160px;
+}
+
+nav {
+    width: calc(100% - 160px);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul a {
+    flex: 1 1 100%;
+    font-weight: 200;
+    font-size: 1em;
+    text-align: center;
+    color: var(--header-footer-nav-text-color);
+    text-decoration: none;
+    font-family: var(--nav-font), sans-serif;
+    display: block;
+}
+
 /* 
 
 
 
 nav ul {
-    list-style: none;
+    
     background-color: var(--nav-background-color);
     justify-content: space-between;
     flex-direction: row;
