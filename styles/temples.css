@@ -41,6 +41,10 @@ p {
     margin: 15px;
 }
 
+h1 {
+    font-size: 1.5rem;
+}
+
 header,
 footer,
 nav {
@@ -50,22 +54,18 @@ nav {
     padding: 0px;
 }
 
-/* h1 {
-    font-size: 1rem;
-}
-
-
-
-header,
-footer {
-    max-width: var(--page-max-width);
-}
-
 header {
+    padding: 20px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: var(--nav-font), sans-serif;
 }
+
+/* 
+
+
 
 nav ul {
     list-style: none;
