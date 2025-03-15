@@ -10,7 +10,7 @@
     --hr-color: #a3a3a3;
     --header-height: 7.15em;
     --nav-height: 3em;
-    --main-max-width: 640px;
+    --main-max-width: 800px;
     --footer-height: 8.2em;
     --figure-height: 200px;
     --figure-width: 250px;
@@ -30,23 +30,15 @@ body {
     font-family: var(--body-font), serif;
     font-weight: 300;
     line-height: 1.7em;
-    /* display: grid;
-    grid-template-rows: 100px auto 100px;
-    grid-template-columns: 100%; */
-    /* max-width: var(--main-max-width); */
 }
 
-header,
 main {
+    max-width: var(--main-max-width);
     margin: 0 auto;
 }
 
 p {
     margin: 15px;
-}
-
-/* h1 {
-    font-size: 1rem;
 }
 
 header,
@@ -57,6 +49,12 @@ nav {
     margin: 0 auto;
     padding: 0px;
 }
+
+/* h1 {
+    font-size: 1rem;
+}
+
+
 
 header,
 footer {
@@ -106,10 +104,9 @@ nav a:hover {
     margin: 1em auto;
     font-family: var(--header-font), sans-serif;
     font-size: var(--header-font-size);
-} */
+}
 
-
-
+*/
 main {
     background-color: var(--main-and-card-background-color);
     color: var(--main-aside-text-color);
