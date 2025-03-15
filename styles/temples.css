@@ -30,6 +30,9 @@ body {
     font-family: var(--body-font), serif;
     font-weight: 300;
     line-height: 1.7em;
+    /* display: grid;
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: 100%; */
     /* max-width: var(--main-max-width); */
 }
 
@@ -112,14 +115,15 @@ main {
     color: var(--main-aside-text-color);
     /* max-width: var(--main-max-width); */
     margin: auto;
+    padding: 20px;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: auto;
     grid-template-rows: 50px auto;
     gap: 1rem;
 }
 
 main h1 {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
 }
 
