@@ -1,0 +1,54 @@
+:root {
+    --body-font: Domine;
+    --mur-flag-red: #ea2839;
+    --mur-flag-blue: #1a206e;
+    --mur-flag-yellow: #fed500;
+    --mur-flag-green: #00a551;
+    --header-footer-nav-text-color: #fff;
+    --header-font: Roboto;
+    --header-font-size: 1.5em;
+    --nav-background-color: #000000;
+    --main-and-card-background-color: #ffffff;
+    --main-aside-text-color: #000;
+    --hr-color: #a3a3a3;
+    --header-height: 7.15em;
+    --nav-height: 3em;
+    --main-max-width: 800px;
+    --main-min-width: 250px;
+    --footer-height: 8.2em;
+    --figure-height: 200px;
+    --figure-width: 250px;
+    --nav-font: Roboto;
+    --highlight-text-color: #f3f437;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: var(--body-font), serif;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+header h1,
+footer {
+    background-color: var(--mur-flag-red);
+    font-family: var(--body-font), serif;
+    color: var(--header-footer-nav-text-color);
+    padding: 15px;
+    border-bottom: 15px solid var(--mur-flag-green);
+    text-align: center;
+}
+
+
+
+footer p {
+    width: 100%;
+    margin: 15px auto;
+}
