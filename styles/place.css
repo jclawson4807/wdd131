@@ -77,12 +77,22 @@ main section {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px min-content;
     row-gap: 10px;
+    border-bottom: 1px solid var(--mur-flag-red);
+    padding: 0px 0px 20px 0px;
 }
 
 main section h2 {
     grid-column: span 2;
     width: 100%;
     text-align: center;
+}
+
+main section img {
+    grid-column: span 2;
+    width: 60px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
 }
 
 .label {
