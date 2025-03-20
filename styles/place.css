@@ -139,10 +139,24 @@ footer p {
     }
 
     .data {
-        width: 300px;
+        width: 250px;
         position: absolute;
         left: 30px;
         top: 100px;
+    }
+
+    .weather {
+        width: 250px;
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+    }
+
+    main section img {
+        position: absolute;
+        width: 60px;
+        right: 60px;
+        top: -8px;
     }
 }
 
