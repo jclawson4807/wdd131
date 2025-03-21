@@ -113,8 +113,6 @@ footer p {
     main {
         display: block;
         height: 500px;
-        /* max-width: 1000px;
-        margin: 0 auto; */
     }
 
     main section h2 {
@@ -137,7 +135,7 @@ footer p {
         border-bottom: 1px solid var(--mur-flag-red);
         padding: 0px 0px 5px 0px;
         background-color: var(--section-background-color-large);
-        max-width: 250px;
+        max-width: 300px;
         font-size: 0.75em;
     }
 
@@ -149,10 +147,14 @@ footer p {
     }
 
     .weather {
-        width: 250px;
+        width: 300px;
         position: absolute;
         right: 30px;
         top: 330px;
+    }
+
+    .weather h2 {
+        width: 270px;
     }
 
     .weather h2::after {
@@ -163,15 +165,11 @@ footer p {
         background: transparent url('../images/weather-cloudy.svg') no-repeat;
         position: absolute;
         top: 3px;
-        right: 60px;
+        right: 80px;
     }
 
     main section img {
         display: none;
-        /* position: absolute;
-        width: 60px;
-        right: 60px;
-        top: -8px; */
     }
 
     main .hero {
