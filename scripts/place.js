@@ -14,6 +14,9 @@ else {
     set_windchill_text(calculateWindChill(temperature, wind_speed));
 }
 
+set_temperature_text(temperature, temperature_unit);
+set_wind_speed_text(wind_speed, wind_speed_unit, wind_speed_description);
+
 function calculateWindChill(temperature, wind_speed) {
     const wind_chill_str = (13.12 + 0.6215 * temperature - 11.37 * Math.pow(wind_speed, 0.16) + 0.3965 * temperature * Math.pow(wind_speed, 0.16)).toFixed(2);
     return wind_chill_str;
@@ -31,5 +34,5 @@ function set_temperature_text(temperature, temperature_unit) {
 
 function set_wind_speed_text(wind_speed, wind_speed_unit, wind_speed_description) {
     const wind_speed_span = document.querySelector("#wind-speed");
-    wind_speed_span.textContent = `${wind_speed_description}$${wind_speed}${tewind_speed_unitmperature_unit}`;
+    wind_speed_span.textContent = `${wind_speed_description}${wind_speed}${wind_speed_unit}`;
 }
