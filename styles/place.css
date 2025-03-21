@@ -3,9 +3,10 @@
     --mur-flag-red: #ea2839;
     --mur-flag-blue: #1a206e;
     --mur-flag-yellow: #fed500;
-    --mur-flag-green: #00a551;
-    --mur-flag-green-semitransparent: #00a550f3;
+    --mur-flag-green: #00a550;
+    --mur-flag-green-semitransparent: #00572aeb;
     --header-footer-nav-text-color: #fff;
+    --h2-text-color: white;
     --header-font: Roboto;
     --header-font-size: 1.5em;
     --main-background-color: #ffffff;
@@ -31,7 +32,7 @@ body {
 
 header h1,
 footer {
-    background-color: var(--mur-flag-red);
+    background-color: var(--mur-flag-blue);
     font-family: var(--header-font), sans-serif;
     color: var(--header-footer-nav-text-color);
     padding: 15px;
@@ -70,7 +71,7 @@ main section {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px min-content;
     row-gap: 10px;
-    border-bottom: 1px solid var(--mur-flag-red);
+    border-bottom: 1px solid var(--mur-flag-blue);
     padding: 0px 0px 20px 0px;
 }
 
@@ -124,7 +125,7 @@ footer p {
         padding: 10px 20px 25px 20px;
         margin: 10px 0px 5px 0px;
         width: 220px;
-        color: var(--header-footer-nav-text-color);
+        color: var(--h2-text-color);
     }
 
     main section {
@@ -132,7 +133,7 @@ footer p {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 60px min-content;
         row-gap: 5px;
-        border-bottom: 1px solid var(--mur-flag-red);
+        border-bottom: 1px solid var(--mur-flag-blue);
         padding: 0px 0px 5px 0px;
         background-color: var(--section-background-color-large);
         max-width: 300px;
@@ -184,7 +185,7 @@ footer p {
         height: 500px;
         padding: 0px;
         margin: 0px;
-        border-bottom: 5px solid var(--mur-flag-red);
+        border-bottom: 5px solid var(--mur-flag-blue);
         object-fit: cover;
 
     }
@@ -209,7 +210,7 @@ footer p {
         height: 1000px;
         padding: 0px;
         margin: 0px;
-        border-bottom: 5px solid var(--mur-flag-red);
+        border-bottom: 5px solid var(--mur-flag-blue);
         object-fit: cover;
 
     }
