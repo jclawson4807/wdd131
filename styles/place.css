@@ -4,6 +4,7 @@
     --mur-flag-blue: #1a206e;
     --mur-flag-yellow: #fed500;
     --mur-flag-green: #00a551;
+    --mur-flag-green-semitransparent: #00a550f3;
     --header-footer-nav-text-color: #fff;
     --header-font: Roboto;
     --header-font-size: 1.5em;
@@ -119,7 +120,7 @@ footer p {
     main section h2 {
         grid-column: span 2;
         text-align: left;
-        background-color: var(--mur-flag-green);
+        background-color: var(--mur-flag-green-semitransparent);
         position: relative;
         left: -10px;
         padding: 10px 20px 25px 20px;
