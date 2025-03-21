@@ -155,11 +155,23 @@ footer p {
         top: 330px;
     }
 
-    main section img {
+    .weather h2::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: transparent url('../images/weather-cloudy.svg') no-repeat;
         position: absolute;
+        top: 3px;
+        right: 60px;
+    }
+
+    main section img {
+        display: none;
+        /* position: absolute;
         width: 60px;
         right: 60px;
-        top: -8px;
+        top: -8px; */
     }
 
     main .hero {
