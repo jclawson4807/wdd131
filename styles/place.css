@@ -159,14 +159,14 @@ footer p {
     }
 
     .weather h2::after {
-        content: "";
+        content: "🌥️";
         display: block;
-        width: 40px;
-        height: 40px;
-        background: transparent url('../images/weather-cloudy.svg') no-repeat;
+        width: 60px;
+        height: 60px;
         position: absolute;
-        top: 3px;
+        top: 8px;
         right: 80px;
+        font-size: 3em;
     }
 
     main section img {
