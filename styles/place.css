@@ -107,11 +107,13 @@ footer p {
 }
 
 /* large view navigation ************************************/
-@media (min-width: 500px) {
+@media (min-width: 600px) {
 
     main {
         display: block;
-        height: 800px;
+        height: 500px;
+        /* max-width: 1000px;
+        margin: 0 auto; */
     }
 
     main section h2 {
@@ -149,7 +151,7 @@ footer p {
         width: 250px;
         position: absolute;
         right: 30px;
-        bottom: 30px;
+        top: 330px;
     }
 
     main section img {
@@ -158,14 +160,4 @@ footer p {
         right: 60px;
         top: -8px;
     }
-}
-
-@media (min-width: 640px) {
-    /* main {
-        grid-template-columns: 1fr 1fr 1fr;
-    } */
-
-    /* main h2 {
-        grid-column: span 3;
-    } */
 }
