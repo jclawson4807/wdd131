@@ -160,4 +160,21 @@ footer p {
         right: 60px;
         top: -8px;
     }
+
+    main .hero {
+        margin: 0;
+        padding: 0px;
+        width: 100%;
+        height: 500px;
+    }
+
+    main .hero picture img {
+        width: 100%;
+        height: 500px;
+        padding: 0px;
+        margin: 0px;
+        border-bottom: 5px solid var(--mur-flag-red);
+        object-fit: cover;
+
+    }
 }
