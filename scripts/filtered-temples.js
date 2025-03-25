@@ -155,7 +155,7 @@ function generateTempleCard(temple) {
 function populateTempleCards(temples) {
     const mainElement = document.querySelector("main");
 
-    mainElement.innerHTML = "";
+    mainElement.innerHTML = "<h2>Home</h2>";
 
     for (let i = 0; i < temples.length; i++) {
         mainElement.innerHTML = mainElement.innerHTML + generateTempleCard(temples[i]);
