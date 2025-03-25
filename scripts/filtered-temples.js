@@ -88,7 +88,7 @@ const temples = [
         area: 37062,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/chicago-illinois/400x250/Chicago-Temple_0784.jpg"
-    },
+    }
 ];
 
 const hamButton = document.querySelector('#menu');
@@ -111,3 +111,11 @@ function generateTempleCard(temple) {
                 alt="Picture of the ${temple.templeName}" loading="lazy">
         </figure>`;
 }
+
+function populateTempleCards(temples) {
+    const mainElement = document.querySelector("main");
+
+    mainElement.innerHTML = temples.map(generateTempleCard);
+}
+
+populateTempleCards(temples);
