@@ -108,14 +108,16 @@ function generateTempleCard(temple) {
                 <p><strong>Size: </strong>${temple.area} sq ft</p>
             </figcaption>
             <img src="${temple.imageUrl}"
-                alt="Picture of the ${temple.templeName}" loading="lazy">
+                alt="Picture of the ${temple.templeName}" loading="lazy" width="400" height="250">
         </figure>`;
 }
 
 function populateTempleCards(temples) {
     const mainElement = document.querySelector("main");
 
-    mainElement.innerHTML = temples.map(generateTempleCard);
+    for (let i = 0; i < temples.length; i++) {
+        mainElement.innerHTML = mainElement.innerHTML + generateTempleCard(temples[i]);
+    }
 }
 
 populateTempleCards(temples);
