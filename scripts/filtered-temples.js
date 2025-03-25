@@ -91,6 +91,13 @@ const temples = [
     }
 ];
 
+
+const homeButton = document.querySelector('#home');
+const oldButton = document.querySelector('#old');
+const newButton = document.querySelector('#new');
+const largeButton = document.querySelector('#large');
+const smallButton = document.querySelector('#small');
+
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -98,6 +105,39 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
+
+homeButton.addEventListener('click', () => {
+    populateTempleCards(temples);
+});
+
+oldButton.addEventListener('click', () => {
+
+    const oldTemples = temples.filter((temple) => parseInt(temple.dedicated.substring(1, 4)) < 1900);
+
+    populateTempleCards(oldTemples);
+});
+
+newButton.addEventListener('click', () => {
+
+    const newTemples = temples.filter((temple) => parseInt(temple.dedicated.substring(1, 4)) > 2000);
+
+    populateTempleCards(newTemples);
+});
+
+largeButton.addEventListener('click', () => {
+
+    const largeTemples = temples.filter((temple) => temple.area > 90000);
+
+    populateTempleCards(largeTemples);
+});
+
+smallButton.addEventListener('click', () => {
+
+    const smallTemples = temples.filter((temple) => temple.area < 10000);
+
+    populateTempleCards(smallTemples);
+});
+
 
 function generateTempleCard(temple) {
     return `<figure>
@@ -114,6 +154,8 @@ function generateTempleCard(temple) {
 
 function populateTempleCards(temples) {
     const mainElement = document.querySelector("main");
+
+    mainElement.innerHTML = "";
 
     for (let i = 0; i < temples.length; i++) {
         mainElement.innerHTML = mainElement.innerHTML + generateTempleCard(temples[i]);
