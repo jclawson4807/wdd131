@@ -100,7 +100,14 @@ hamButton.addEventListener('click', () => {
 });
 
 function generateTempleCard(temple) {
-    return ``;
-
-
+    return `<figure>
+            <figcaption>
+                <h2>${temple.templeName}</h2>
+                <p><strong>Location: </strong>${temple.location}</p>
+                <p><strong>Dedicated: </strong>${temple.dedicated}</p>
+                <p><strong>Size: </strong>${temple.area} sq ft</p>
+            </figcaption>
+            <img src="${temple.imageUrl}"
+                alt="Picture of the ${temple.templeName}" loading="lazy">
+        </figure>`;
 }
