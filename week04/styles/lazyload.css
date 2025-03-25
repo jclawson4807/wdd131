@@ -27,15 +27,16 @@ img {
     margin: 10px auto;
     background: black;
     animation: fadeout 2s;
-    animation-direction: reverse;
 }
 
 @keyframes fadeout {
     100% {
         opacity: 1;
+        filter: brightness(1);
     }
 
     0% {
         opacity: 0;
+        filter: brightness(0);
     }
 }
