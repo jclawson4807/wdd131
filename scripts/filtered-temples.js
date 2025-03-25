@@ -112,14 +112,14 @@ homeButton.addEventListener('click', () => {
 
 oldButton.addEventListener('click', () => {
 
-    const oldTemples = temples.filter((temple) => parseInt(temple.dedicated.substring(1, 4)) < 1900);
+    const oldTemples = temples.filter((temple) => parseInt(temple.dedicated.substring(0, 4)) < 1900);
 
     populateTempleCards(oldTemples);
 });
 
 newButton.addEventListener('click', () => {
 
-    const newTemples = temples.filter((temple) => parseInt(temple.dedicated.substring(1, 4)) > 2000);
+    const newTemples = temples.filter((temple) => parseInt(temple.dedicated.substring(0, 4)) > 2000);
 
     populateTempleCards(newTemples);
 });
