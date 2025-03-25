@@ -8,6 +8,9 @@
     --main-and-card-background-color: #ffffff;
     --main-aside-text-color: #000;
     --hr-color: #a3a3a3;
+    --card-background-color: #eeeeee;
+    --figure-text-color: #221715;
+    --figure-strong-color: #1d4d73;
     --header-height: 7.15em;
     --nav-height: 3em;
     --main-max-width: 800px;
@@ -131,13 +134,15 @@ main {
 
 main h2 {
     text-align: center;
-    color: var(--header-footer-background-color);
+    color: var(--figure-text-color);
     grid-column: span 1;
 }
 
 figure {
-    background-color: var(--main-and-card-background-color);
+    background-color: var(--card-background-color);
     border: 1px solid var(--nav-background-color);
+    box-shadow: 0px 0px 5px 2px #000000;
+    width: 400px;
 }
 
 figure img {
@@ -145,11 +150,16 @@ figure img {
 }
 
 figcaption {
-    color: var(--header-footer-background-color);
+    color: var(--figure-text-color);
     width: 100%;
     padding: 10px;
     margin: 0px;
     font-size: 0.75rem;
+    text-align: center;
+}
+
+figcaption strong {
+    color: var(--figure-strong-color);
 }
 
 footer {
