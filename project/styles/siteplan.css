@@ -1,13 +1,14 @@
 :root {
     --body-font: Domine;
+    --dark-body-blue-background-color: #0D2149;
     --header-footer-background-color: #1d4d73;
+    --hr-color: #a3a3a3;
     --header-footer-nav-text-color: #fff;
     --header-font: Roboto;
     --header-font-size: 1.5em;
     --nav-background-color: #000000;
     --main-and-card-background-color: #ffffff;
     --main-aside-text-color: #000;
-    --hr-color: #a3a3a3;
     --header-height: 7.15em;
     --nav-height: 3em;
     --main-max-width: 800px;
