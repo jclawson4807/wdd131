@@ -163,17 +163,17 @@ footer p {
     color: var(--highlight-text-color);
 }
 
-section {
+div {
     margin: 30px auto;
 }
 
-section img {
+div img {
     width: 100%;
     height: auto;
     margin: auto;
 }
 
-section table {
+div table {
     margin: 15px auto;
 }
 
@@ -204,6 +204,11 @@ section table {
     width: 120px;
     margin: 20px;
     text-align: center;
+}
+
+#fhdlogo {
+    width: 100%;
+    margin: 20px auto;
 }
 
 
