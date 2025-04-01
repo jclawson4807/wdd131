@@ -51,7 +51,7 @@ header {
 }
 
 h1 {
-    text-align: left;
+    text-align: center;
     font-size: 1.5rem;
     margin-left: 1rem;
 }
@@ -233,22 +233,16 @@ section table {
         display: block;
         flex: 1 1 100%;
     }
+}
 
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    main h2 {
-        grid-column: span 2;
+@media (max-width: 64000px) {
+    h1 {
+        font-size: 1.5rem;
     }
 }
 
-@media (min-width: 640px) {
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    main h2 {
-        grid-column: span 3;
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.0rem;
     }
 }
