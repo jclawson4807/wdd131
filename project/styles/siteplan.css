@@ -235,7 +235,7 @@ section table {
     }
 }
 
-@media (max-width: 64000px) {
+@media (max-width: 640px) {
     h1 {
         font-size: 1.5rem;
     }
