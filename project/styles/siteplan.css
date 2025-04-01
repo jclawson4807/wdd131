@@ -1,6 +1,6 @@
 :root {
     --body-font: Domine;
-    --dark-body-blue-background-color: #0D2149;
+    --dark-blue-emphasis-color: #0D2149;
     --header-footer-background-color: #1d4d73;
     --hr-color: #a3a3a3;
     --header-footer-nav-text-color: #fff;
@@ -20,11 +20,11 @@
     --highlight-text-color: #f3f437;
 }
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 body {
     margin: 0;
@@ -33,6 +33,7 @@ body {
     font-weight: 300;
     line-height: 1.7em;
     min-width: var(--main-min-width);
+    color: var(--dark-body-blue-text-color);
 }
 
 header,
@@ -170,6 +171,16 @@ section {
 }
 
 section table {
-    max-width: 400px;
     margin: 15px auto;
+}
+
+.color-sample-col {
+    width: 30px;
+    margin: 20px;
+}
+
+.hex-value-col {
+    width: 120px;
+    margin: 20px;
+    text-align: center;
 }
