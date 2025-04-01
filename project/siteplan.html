@@ -14,29 +14,18 @@
         href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Domine:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/siteplan.css">
-    <script src="scripts/siteplan.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
         <h1>Site Plan for familyheritagediscovery.org</h1>
-        <button type="button" id="menu" aria-label="Menu Button"></button>
-        <nav>
-            <ul class="navigation">
-                <li><a href="siteplan.html" title="Home" id="home">Home</a></li>
-                <li><a href="siteplan-desktop-wireframe.html" title="Desktop Wireframe" id="desktop">Desktop
-                        Wireframe</a></li>
-                <li><a href="siteplan-mobile-wireframe.html" title="Mobile Wireframe" id="mobile">Mobile Wireframe</a>
-                </li>
-            </ul>
-        </nav>
     </header>
     <main>
         <section>
             <picture>
                 <source srcset="images/fhd-hero-300.webp" media="(max-width: 499px)">
-                <source srcset=" images/fhd-hero-500.webp" media="(max-width: 500px)">
+                <source srcset=" images/fhd-hero-500.webp" media="(min-width: 500px)">
                 <img src="images/fhd-hero-800.webp" alt="Site hero image - tree with blue leaves and signs" width="800">
             </picture>
             <h2>Site Name: Family Heritage Discovery
@@ -45,8 +34,8 @@
                 assignment, the site will be hosted at familyheritagediscovery.org. The logo shown below will be adapted
                 to become a favicon as well.</p>
             <picture>
-                <source srcset="images/ffhdlogo-292.webp" media="(max-width: 292px)">
-                <source srcset=" images/fhdlogo-487.webp" media="(max-width: 487px)">
+                <source srcset="images/fhdlogo-292.webp" media="(max-width: 292px)">
+                <source srcset=" images/fhdlogo-487.webp" media="(min-width: 487px)">
                 <img id="fhdlogo" src="images/fhdlogo-800.webp" alt="Family Heritage Discovery Logo" width="800">
             </picture>
         </section>

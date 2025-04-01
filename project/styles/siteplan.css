@@ -47,7 +47,7 @@ nav {
 }
 
 header {
-    padding: 20px 20px 0px 20px;
+    padding: 20px;
 }
 
 h1 {
@@ -61,58 +61,6 @@ h2 {
     color: navy;
     text-align: left;
     margin: 1rem;
-}
-
-nav {
-    max-width: 800px;
-    margin: 1rem auto;
-}
-
-/* small view navigation */
-#menu {
-    font-size: 1.5rem;
-    border: 0;
-    background: none;
-    color: #000;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
-
-#menu::before {
-    content: "☰";
-}
-
-#menu.open::before {
-    content: "X";
-}
-
-.navigation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    list-style: none;
-    background-color: #333;
-    color: #fff;
-}
-
-.navigation a {
-    display: none;
-    padding: 1rem;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-}
-
-.navigation a:hover {
-    background-color: #bbb;
-    color: #333;
-    font-weight: 700;
-}
-
-/* when the button is clicked - the open class is toggled (added/removed) */
-.open a {
-    display: block;
 }
 
 main {
@@ -132,23 +80,6 @@ main h2 {
     grid-column: span 1;
 }
 
-figure {
-    background-color: var(--main-and-card-background-color);
-    border: 1px solid var(--nav-background-color);
-}
-
-figure img {
-    width: 100%;
-}
-
-figcaption {
-    color: var(--header-footer-background-color);
-    width: 100%;
-    padding: 10px;
-    margin: 0px;
-    font-size: 0.75rem;
-}
-
 footer {
     padding: 10px;
     text-align: center;
@@ -163,17 +94,17 @@ footer p {
     color: var(--highlight-text-color);
 }
 
-div {
+section {
     margin: 30px auto;
 }
 
-div img {
+section img {
     width: 100%;
     height: auto;
     margin: auto;
 }
 
-div table {
+section table {
     margin: 15px auto;
 }
 
@@ -223,20 +154,6 @@ div table {
     h2 {
         font-size: 2rem;
         text-align: center;
-    }
-
-    #menu {
-        display: none;
-        /* hide hamburger button */
-    }
-
-    .navigation {
-        flex-direction: row;
-    }
-
-    .navigation a {
-        display: block;
-        flex: 1 1 100%;
     }
 }
 
