@@ -115,11 +115,6 @@ nav {
     display: block;
 }
 
-.active::before {
-    content: "📍";
-    /* just a wayfinding symbol for the user */
-}
-
 main {
     max-width: var(--main-max-width);
     margin: 0 auto;
@@ -209,4 +204,51 @@ section table {
     width: 120px;
     margin: 20px;
     text-align: center;
+}
+
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main h2 {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 640px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main h2 {
+        grid-column: span 3;
+    }
 }
