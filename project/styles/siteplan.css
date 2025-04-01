@@ -1,5 +1,7 @@
 :root {
+    --nav-font: Roboto;
     --body-font: Domine;
+    --cursive-sample-font: Ballet;
     --dark-blue-emphasis-color: #0D2149;
     --header-footer-background-color: #1d4d73;
     --hr-color: #a3a3a3;
@@ -16,7 +18,7 @@
     --footer-height: 8.2em;
     --figure-height: 200px;
     --figure-width: 250px;
-    --nav-font: Roboto;
+
     --highlight-text-color: #f3f437;
 }
 
@@ -172,6 +174,24 @@ section {
 
 section table {
     margin: 15px auto;
+}
+
+.font-name-and-sample-col {
+    width: 200px;
+    text-align: center;
+}
+
+.domine-font-sample {
+    font-family: var(--body-font), serif;
+}
+
+.roboto-font-sample {
+    font-family: var(--header-font), sans-serif;
+}
+
+.ballet-font-sample {
+    font-family: var(--cursive-sample-font), 'Brush Script MT',
+        cursive;
 }
 
 .color-sample-col {
