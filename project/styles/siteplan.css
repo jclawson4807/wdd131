@@ -172,6 +172,12 @@ section {
     margin: 30px auto;
 }
 
+section img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
 section table {
     margin: 15px auto;
 }
