@@ -26,7 +26,7 @@ const products = [
     }
 ];
 
-const productNameSelect = document.querySelector("#productName");
+const productNameSelect = document.querySelector("#product-name");
 
 productNameSelect.innerHTML = null;
 const option = document.createElement("option");

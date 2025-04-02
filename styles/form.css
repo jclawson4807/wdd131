@@ -59,30 +59,30 @@ main {
     margin: 15px auto;
 }
 
-.italicText {
+.italic-text {
     font-style: italic;
 }
 
-.requiredAsterisk {
+.required-asterisk {
     color: var(--required-red);
 }
 
 /*----------- FORM STYLING --------------*/
 
-.productReviewForm fieldset {
+.product-review-form fieldset {
     margin: 2rem 0;
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: .5rem 2%;
 }
 
-.productReviewForm legend {
+.product-review-form legend {
     color: var(--legend-text-color);
     padding: 0 .5rem;
     font-family: var(--header-font), serif;
 }
 
-.productReviewForm label {
+.product-review-form label {
     display: block;
     padding-top: 1.5rem;
     color: var(--header-footer-background-color);
@@ -90,20 +90,20 @@ main {
     min-height: 44px;
 }
 
-.productReviewForm div {
+.product-review-form div {
     padding: 1.5rem 0 0 0;
     color: var(--header-footer-background-color);
     font-size: 0.9em;
 }
 
-.productReviewForm input[type="text"],
-.productReviewForm input[type="tel"],
-.productReviewForm input[type="email"],
-.productReviewForm input[type="url"],
-.productReviewForm input[type="date"],
-.productReviewForm select,
-.productReviewForm textarea,
-.productReviewForm input[type="number"] {
+.product-review-form input[type="text"],
+.product-review-form input[type="tel"],
+.product-review-form input[type="email"],
+.product-review-form input[type="url"],
+.product-review-form input[type="date"],
+.product-review-form select,
+.product-review-form textarea,
+.product-review-form input[type="number"] {
     background-color: #eee;
     display: block;
     border: solid 1px #999;
@@ -115,12 +115,12 @@ main {
     margin: 5px 0;
 }
 
-.productReviewForm input[type="radio"],
-.productReviewForm input[type="checkbox"] {
+.product-review-form input[type="radio"],
+.product-review-form input[type="checkbox"] {
     margin-right: 6px;
 }
 
-.productReviewForm input[type="submit"] {
+.product-review-form input[type="submit"] {
     border: none;
     background-image: linear-gradient(var(--dark-blue-emphasis-color), var(--header-footer-background-color));
     color: var(--header-footer-nav-text-color);
@@ -132,11 +132,11 @@ main {
     box-shadow: 1px 1px 4px var(--box-shadow-color);
 }
 
-/* .productReviewForm input:required {
+/* .product-review-form input:required {
     border-right: solid 8px var(--dark-blue-emphasis-color);
 } */
 
-/* .productReviewForm input:required input:valid {
+/* .product-review-form input:required input:valid {
     border-right: solid 8px green;
 } */
 
@@ -168,9 +168,9 @@ main {
         min-width: 100%;
     }
 
-    .productReviewForm select,
-    .productReviewForm textarea,
-    .productReviewForm input {
+    .product-review-form select,
+    .product-review-form textarea,
+    .product-review-form input {
         max-width: 96%;
         margin: 10px 2% 5px 2%;
     }
