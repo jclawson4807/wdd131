@@ -18,6 +18,12 @@
     --highlight-text-color: #f3f437;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0px;
@@ -25,6 +31,7 @@ body {
     font-weight: 300;
     min-width: var(--main-min-width);
     color: var(--dark-body-blue-text-color);
+
 }
 
 footer,
@@ -60,11 +67,6 @@ main {
     color: var(--required-red);
 }
 
-.productReviewForm .marginTop8 {
-    margin-top: 8px;
-    padding-top: 0;
-}
-
 /*----------- FORM STYLING --------------*/
 
 .productReviewForm fieldset {
@@ -85,13 +87,13 @@ main {
     padding-top: 1.5rem;
     color: var(--header-footer-background-color);
     font-size: .9rem;
+    min-height: 44px;
 }
 
 .productReviewForm div {
-    padding-top: 1.5rem;
+    padding: 1.5rem 0 0 0;
     color: var(--header-footer-background-color);
     font-size: 0.9em;
-    margin-bottom: 5px;
 }
 
 .productReviewForm input[type="text"],
