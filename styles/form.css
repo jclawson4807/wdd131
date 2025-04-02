@@ -10,7 +10,7 @@
     --main-and-card-background-color: #ffffff;
     --legend-text-color: #000;
     --required-red: #9c2c13;
-    --main-max-width: 800px;
+    --main-max-width: 400px;
     --main-min-width: 250px;
     --footer-height: 8.2em;
     --figure-height: 200px;
@@ -137,3 +137,43 @@ main {
 /* .productReviewForm input:required input:valid {
     border-right: solid 8px green;
 } */
+
+@media (min-width: 37.5em) {
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.0rem;
+    }
+
+    body {
+        min-width: 100%;
+    }
+
+    .productReviewForm select,
+    .productReviewForm textarea,
+    .productReviewForm input {
+        max-width: 96%;
+        margin: 10px 2% 5px 2%;
+    }
+
+    footer p {
+        font-size: .5em;
+    }
+}
