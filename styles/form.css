@@ -60,6 +60,11 @@ main {
     color: var(--required-red);
 }
 
+.productReviewForm .marginTop8 {
+    margin-top: 8px;
+    padding-top: 0;
+}
+
 /*----------- FORM STYLING --------------*/
 
 .productReviewForm fieldset {
@@ -77,15 +82,16 @@ main {
 
 .productReviewForm label {
     display: block;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     color: var(--header-footer-background-color);
     font-size: .9rem;
 }
 
 .productReviewForm div {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     color: var(--header-footer-background-color);
     font-size: 0.9em;
+    margin-bottom: 5px;
 }
 
 .productReviewForm input[type="text"],
@@ -104,6 +110,7 @@ main {
     width: 100%;
     max-width: 400px;
     appearance: none;
+    margin: 5px 0;
 }
 
 .productReviewForm input[type="radio"],
@@ -123,10 +130,10 @@ main {
     box-shadow: 1px 1px 4px var(--box-shadow-color);
 }
 
-.productReviewForm input:required {
+/* .productReviewForm input:required {
     border-right: solid 8px var(--dark-blue-emphasis-color);
-}
+} */
 
-.productReviewForm input:required input:valid {
+/* .productReviewForm input:required input:valid {
     border-right: solid 8px green;
-}
+} */
