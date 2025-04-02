@@ -26,7 +26,8 @@
     <main>
         <form method="get" action="review.html" class="productReviewForm">
 
-            <label>Product Name* <select name="productName" id="productName" required>
+            <label>Product Name<span class="requiredAsterisk">*</span> <select name="productName" id="productName"
+                    required>
                     <option disabled selected>Select a product... &#9662;</option>
                 </select>
             </label>
@@ -39,7 +40,8 @@
             <label><input type="radio" name="overallRating" id="fiveStars"
                     required>&star;&star;&star;&star;&star;</label>
 
-            <label>Date of Insallation*<input type="date" id="dateOfInstallation" name="dateOfInstallation" required>
+            <label>Date of Insallation<span class="requiredAsterisk">*</span><input type="date" id="dateOfInstallation"
+                    name="dateOfInstallation" required>
             </label>
 
             <div>Which features did you find useful in this product?<BR><span class="italicText">(Check all that
@@ -49,10 +51,7 @@
             <label><input type="checkbox" name="easeOfUse" value="easeOfUse" id="easeOfUse">Ease of Use</label>
             <label><input type="checkbox" name="performance" value="performance" id="performance">Performance</label>
 
-
-
-
-            <label>Written Review<textarea name="writtenReview" id="writtenReview"></textarea></label>
+            <label>Written Review<textarea name="writtenReview" id="writtenReview" rows="10"></textarea></label>
             <label>Your Name <input type="text" name="userName" id="userName"></label>
             <input type="submit" value="Post Review">
         </form>
