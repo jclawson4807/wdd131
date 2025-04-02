@@ -28,6 +28,15 @@ const products = [
 
 const productNameSelect = document.querySelector("#productName");
 
+productNameSelect.innerHTML = null;
+const option = document.createElement("option");
+option.disabled = true;
+option.selected = true;
+option.value = "";
+option.innerHTML = "Select a product... &#9662";
+
+productNameSelect.appendChild(option);
+
 products.forEach(product => {
     const option = document.createElement("option");
     option.id = product.id;
@@ -35,3 +44,4 @@ products.forEach(product => {
 
     productNameSelect.appendChild(option);
 });
+
