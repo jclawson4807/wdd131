@@ -148,17 +148,25 @@ main picture {
     margin: 0;
     display: flex;
     flex-direction: row;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 4px var(--box-shadow-color);
 }
 
 #cta-container p {
     width: 50%;
-    padding: 10px;
+    padding: 1.5rem;
+    display: inline-block;
+    font-size: 1.0rem;
 }
 
 #cta-form label {
     display: block;
     text-align: left;
-    font-size: .9rem;
+    font-size: 1.1rem;
     min-height: 44px;
 }
 
@@ -189,9 +197,6 @@ main picture {
     padding: 1.5rem;
     margin: 0;
     width: 50%;
-    border-radius: 0.5rem;
-
-    box-shadow: 1px 1px 4px var(--box-shadow-color);
 }
 
 
