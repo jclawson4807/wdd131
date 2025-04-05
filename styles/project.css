@@ -147,6 +147,7 @@ main picture {
     margin: 0;
     display: flex;
     flex-direction: row;
+    border-bottom: thin solid var(--dark-blue-emphasis-color);
 }
 
 #cta-container p {
