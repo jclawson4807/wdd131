@@ -165,11 +165,11 @@ main picture {
 #cta-form input[type="email"] {
     display: block;
     width: 100%;
-    background-color: var(--hr-color);
-    border: thin solid black;
+    border: thin solid var(--box-shadow-color);
     border-radius: 6px;
-    height: 1.5rem;
-    padding: 5px;
+    height: 36px;
+    padding: 8px 12px 8px 12px;
+    margin: 8px auto;
 }
 
 #cta-form input[type="submit"] {
