@@ -199,12 +199,10 @@ main picture {
     width: 50%;
 }
 
-
-
-
 figure {
-    background-color: var(--main-and-card-background-color);
-    border: 1px solid var(--nav-background-color);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 4px var(--box-shadow-color);
+    padding: 1.75em;
 }
 
 figure img {
@@ -235,6 +233,19 @@ footer p {
 
 section {
     margin: 30px auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+#common-questions-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px auto;
+    gap: 20px;
+}
+
+#common-questions-section h2 {
+    grid-column: span 3;
 }
 
 section img {
