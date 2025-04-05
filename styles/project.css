@@ -11,6 +11,7 @@
     --nav-background-color: #000000;
     --main-and-card-background-color: #ffffff;
     --main-aside-text-color: #000;
+    --box-shadow-color: #0000002e;
     --header-height: 7.15em;
     --nav-height: 3em;
     --main-max-width: 800px;
@@ -139,7 +140,7 @@ main h2 {
 }
 
 main picture {
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 
 #cta-container {
@@ -147,7 +148,6 @@ main picture {
     margin: 0;
     display: flex;
     flex-direction: row;
-    border-bottom: thin solid var(--dark-blue-emphasis-color);
 }
 
 #cta-container p {
@@ -186,10 +186,14 @@ main picture {
 }
 
 #cta-form {
-    padding: 10px;
+    padding: 1.5rem;
     margin: 0;
     width: 50%;
+    border-radius: 0.5rem;
+
+    box-shadow: 1px 1px 4px var(--box-shadow-color);
 }
+
 
 
 
