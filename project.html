@@ -30,12 +30,22 @@
         </nav>
     </header>
     <main>
+        <picture>
+            <source srcset="images/fhd-hero-300.webp" media="(max-width: 499px)">
+            <source srcset=" images/fhd-hero-500.webp" media="(min-width: 500px)">
+            <img src="images/fhd-hero-800.webp" alt="Site hero image - tree with blue leaves and signs" width="800">
+        </picture>
+        <div id="cta-container">
+            <p>Join our mailing list and get weekly research tips and genealogy news from our team of experienced
+                researchers sent right to your inbox!</p>
+            <form method="get" action="joined-mailing-list.html" id="cta-form">
+                <label>Email Address <input type="email" name="email" id="email"></label>
+                <input type="submit" value="Send Me Research Tips!">
+            </form>
+        </div>
+
         <section>
-            <picture>
-                <source srcset="images/fhd-hero-300.webp" media="(max-width: 499px)">
-                <source srcset=" images/fhd-hero-500.webp" media="(min-width: 500px)">
-                <img src="images/fhd-hero-800.webp" alt="Site hero image - tree with blue leaves and signs" width="800">
-            </picture>
+
             <h2>Site Name: Family Heritage Discovery
             </h2>
             <p>This site focuses on helping people discover their family heritage. After the completion of the
