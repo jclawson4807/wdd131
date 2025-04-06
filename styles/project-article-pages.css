@@ -257,6 +257,10 @@ section {
     position: relative;
 }
 
+.article-body p {
+    margin: 0 0 10px 0;
+}
+
 .article-body img {
     width: 300px;
     float: left;
