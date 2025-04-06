@@ -298,6 +298,49 @@ footer p {
     color: var(--highlight-text-color);
 }
 
+section .article {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: 1px 1px 4px var(--box-shadow-color);
+    border-bottom: none;
+}
+
+.article-header {
+    width: 100%;
+    display: block;
+}
+
+.article-header p {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.article-header span {
+    display: block;
+}
+
+.article-header .article-title {
+    font-size: 1.2em;
+    padding: 5px;
+    color: var(--header-footer-background-color);
+}
+
+.article-header .article-author {
+    font-size: 0.8em;
+    padding-left: 5px;
+}
+
+.article-header img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
 /* large view navigation ************************************/
 @media (min-width: 615px) {
     h1 {
