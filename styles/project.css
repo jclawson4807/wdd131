@@ -217,6 +217,9 @@ main picture {
 #common-questions-section div {
     position: relative;
     border-radius: 0.5rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
 }
 
 #common-questions-section div p {
@@ -545,18 +548,46 @@ footer p {
     h1 {
         font-size: 1.0rem;
     }
-}
 
-@media (max-width: 400px) {
+    #common-questions-section div {
+        max-width: 375px;
+    }
+
     #common-questions-section div p {
         font-size: 1.6em;
+        line-height: 1.3;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 450px) {
+    #common-questions-section div {
+        max-width: 400px;
+    }
+
+    #common-questions-section div p {
+        font-size: 1.9em;
         line-height: 1.4;
     }
 }
 
-@media (max-width: 450px) {
+@media (min-width: 451px) and (max-width: 500px) {
+    #common-questions-section div {
+        max-width: 450px;
+    }
+
     #common-questions-section div p {
-        font-size: 1.8em;
+        font-size: 2em;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 550px) {
+    #common-questions-section div {
+        max-width: 500px;
+    }
+
+    #common-questions-section div p {
+        font-size: 2.5em;
         line-height: 1.4;
     }
 }
