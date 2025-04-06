@@ -546,3 +546,17 @@ footer p {
         font-size: 1.0rem;
     }
 }
+
+@media (max-width: 400px) {
+    #common-questions-section div p {
+        font-size: 1.6em;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 450px) {
+    #common-questions-section div p {
+        font-size: 1.8em;
+        line-height: 1.4;
+    }
+}
