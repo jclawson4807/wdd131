@@ -250,6 +250,20 @@ section {
     display: inline-block;
 }
 
+.article-body {
+    width: 100%;
+    padding: 1em;
+    border-radius: 0 0 6px 6px;
+    position: relative;
+}
+
+.article-body img {
+    width: 300px;
+    float: left;
+    margin: 0 10px 10px 0;
+    border: 1px solid var(--box-shadow-color);
+}
+
 /* large view navigation ************************************/
 @media (min-width: 615px) {
     h1 {
