@@ -135,7 +135,7 @@ main {
 }
 
 main h2 {
-    text-align: left;
+    text-align: center;
     color: var(--header-footer-background-color);
     grid-column: span 1;
 }
@@ -151,9 +151,10 @@ main picture {
     margin: 0;
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 0 0 20px 0;
     margin: 0 auto;
     width: 100%;
+    border-bottom: 1px solid var(--dark-blue-emphasis-color);
 }
 
 #cta-container p {
@@ -161,6 +162,7 @@ main picture {
     padding: 1.5rem;
     display: block;
     font-size: 1.0rem;
+    text-align: justify;
 }
 
 #cta-form {
@@ -224,6 +226,8 @@ main picture {
     bottom: 1.5rem;
     right: 1.5rem;
     color: white;
+    font-size: 2.1em;
+    line-height: 1.5;
 }
 
 #common-questions-section div img {
@@ -234,9 +238,13 @@ main picture {
 }
 
 section {
-    margin: 30px auto;
+    margin: 0 auto;
     width: 100%;
     padding: 1.75em;
+}
+
+section p {
+    text-align: justify;
 }
 
 section img {
