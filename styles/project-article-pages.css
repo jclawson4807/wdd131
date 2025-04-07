@@ -344,4 +344,8 @@ section {
         float: none;
         margin: 0 auto 1em auto;
     }
+
+    section {
+        box-shadow: none;
+    }
 }
