@@ -72,7 +72,7 @@ const articles = [
             {
                 referenceURL: "https://www.americanancestors.org",
                 referenceText: "American Ancestors",
-                paragraphText: "is a family history tree building site, which also provides links to other research resources. American Ancestors also provides resources to teach users how to do family history research, a live chat with experienced researches, and more. One of the linked resources procides searchable access to over 10 million names."
+                paragraphText: "is a family history tree building site, which also provides links to other research resources. American Ancestors also provides resources to teach users how to do family history research, a live chat with experienced researches, and more. One of the linked resources procides searchable access to over 1.4 billion searchable names."
             },
             {
                 paragraphText: "American Ancestors has multiple collections of family history records, including two collections related to Colonial US research, including records for Mayflower Decendents.  This site can also be used to connect to professional researchers."
