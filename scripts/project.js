@@ -17,16 +17,16 @@ homeButton.addEventListener('click', () => {
 
 familyinfoButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "familyinfo");
-    window.location.replace("project-online-sources.html");
+    window.location.replace("project-articles.html");
 });
 
 onlinesourcesButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "onlinesources");
-    window.location.replace("project-online-sources.html");
+    window.location.replace("project-articles.html");
 });
 
 researchhelpsButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "researchhelps");
-    window.location.replace("project-online-sources.html");
+    window.location.replace("project-articles.html");
 });
 
