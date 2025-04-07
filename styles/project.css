@@ -146,6 +146,11 @@ main picture {
     width: 100%;
 }
 
+main picture img {
+    margin: 0;
+    width: 100%;
+}
+
 #cta-container {
     display: block;
     width: 100%;
