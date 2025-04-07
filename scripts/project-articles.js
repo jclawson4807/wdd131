@@ -105,7 +105,7 @@ function generateArticleParagraph(paragraph) {
     let returnString = "<p>";
 
     if (Object.hasOwn(paragraph, "referenceURL")) {
-        returnString = returnString + `<a href="${paragraph.referenceURL}">${paragraph.referenceText}</a> `;
+        returnString = returnString + `<a href="${paragraph.referenceURL}" target="blank">${paragraph.referenceText}</a> `;
     }
 
     returnString = returnString + `${paragraph.paragraphText}</p>`;
