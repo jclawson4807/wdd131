@@ -40,6 +40,16 @@ body {
     color: var(--dark-body-blue-text-color);
 }
 
+a {
+    color: var(--header-footer-background-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--dark-blue-emphasis-color);
+    text-decoration: none;
+}
+
 header,
 footer,
 nav {
@@ -111,7 +121,6 @@ nav {
 .navigation a:hover {
     background-color: #bbb;
     color: #333;
-    font-weight: 700;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
