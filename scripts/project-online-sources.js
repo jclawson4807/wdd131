@@ -19,29 +19,17 @@ homeButton.addEventListener('click', () => {
 familyinfoButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "familyinfo");
 
-    familyinfoButton.classList.add('active');
-    onlinesourcesButton.classList.remove('active');
-    researchhelpsButton.classList.remove('active');
-
     populateArticles();
 });
 
 onlinesourcesButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "onlinesources");
 
-    familyinfoButton.classList.remove('active');
-    onlinesourcesButton.classList.add('active');
-    researchhelpsButton.classList.remove('active');
-
     populateArticles();
 });
 
 researchhelpsButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "researchhelps");
-
-    familyinfoButton.classList.remove('active');
-    onlinesourcesButton.classList.remove('active');
-    researchhelpsButton.classList.add('active');
 
     populateArticles();
 });
@@ -113,6 +101,20 @@ function populateArticles() {
 
     let filter = window.localStorage.getItem("articleFilter");
 
+    if (filter == "familyinfo") {
+        familyinfoButton.classList.add('active');
+        onlinesourcesButton.classList.remove('active');
+        researchhelpsButton.classList.remove('active');
+    } else if (filter == "onlinesources") {
+        familyinfoButton.classList.remove('active');
+        onlinesourcesButton.classList.add('active');
+        researchhelpsButton.classList.remove('active');
+    } else if (filter == "researchhelps") {
+        familyinfoButton.classList.remove('active');
+        onlinesourcesButton.classList.remove('active');
+        researchhelpsButton.classList.add('active');
+    }
+
     const newArticles = articles.filter((article) => article.articleType == filter);
 
     newArticles.forEach(article => {
@@ -121,6 +123,8 @@ function populateArticles() {
         main.innerHTML = main.innerHTML + returnString;
     });
 }
+
+populateArticles();
 
 
 
