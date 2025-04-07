@@ -13,7 +13,6 @@ const researchhelpsButton = document.querySelector('#researchhelps');
 
 homeButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "none");
-    window.location.replace("project.html");
 });
 
 familyinfoButton.addEventListener('click', () => {

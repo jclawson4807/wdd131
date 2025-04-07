@@ -18,17 +18,32 @@ homeButton.addEventListener('click', () => {
 
 familyinfoButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "familyinfo");
-    window.location.replace("project-online-sources.html");
+
+    familyinfoButton.classList.add('active');
+    onlinesourcesButton.classList.remove('active');
+    researchhelpsButton.classList.remove('active');
+
+    populateArticles();
 });
 
 onlinesourcesButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "onlinesources");
-    window.location.replace("project-online-sources.html");
+
+    familyinfoButton.classList.remove('active');
+    onlinesourcesButton.classList.add('active');
+    researchhelpsButton.classList.remove('active');
+
+    populateArticles();
 });
 
 researchhelpsButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "researchhelps");
-    window.location.replace("project-online-sources.html");
+
+    familyinfoButton.classList.remove('active');
+    onlinesourcesButton.classList.remove('active');
+    researchhelpsButton.classList.add('active');
+
+    populateArticles();
 });
 
 const main = document.querySelector("main");
@@ -93,15 +108,21 @@ function generateArticleSection(article) {
     return returnString
 }
 
-let filter = window.localStorage.getItem("articleFilter");
+function populateArticles() {
+    main.innerHTML = "";
 
-const newArticles = articles.filter((article) => article.articleType == filter);
+    let filter = window.localStorage.getItem("articleFilter");
 
-newArticles.forEach(article => {
-    let returnString = generateArticleSection(article);
+    const newArticles = articles.filter((article) => article.articleType == filter);
 
-    main.innerHTML = main.innerHTML + returnString;
-});
+    newArticles.forEach(article => {
+        let returnString = generateArticleSection(article);
+
+        main.innerHTML = main.innerHTML + returnString;
+    });
+}
+
+
 
 
 
