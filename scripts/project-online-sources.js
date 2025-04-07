@@ -75,7 +75,25 @@ const articles = [
                 paragraphText: "is a family history tree building site, which also provides links to other research resources. American Ancestors also provides resources to teach users how to do family history research, a live chat with experienced researches, and more. One of the linked resources procides searchable access to over 1.4 billion searchable names."
             },
             {
-                paragraphText: "American Ancestors has multiple collections of family history records, including two collections related to Colonial US research, including records for Mayflower Decendents.  This site can also be used to connect to professional researchers."
+                paragraphText: "American Ancestors has multiple collections of family history records, including two collections related to Colonial US research, including records for Mayflower Decendents.  American Ancestors has both free and paid services.  This site can also be used to connect to professional researchers."
+            }
+        ]
+    },
+    {
+        articleType: "onlinesources",
+        articleTitle: "Find My Past",
+        authorName: "James Clawson",
+        authorImage: "author-image.webp",
+        articleImage: "find-my-past-homepage-300-247.webp",
+        articleImageAlt: "Find My Past",
+        paragraphs: [
+            {
+                referenceURL: "https://www.findmypast.com",
+                referenceText: "Find My Past",
+                paragraphText: "is a family history tree and research site.  While it incldues some US research materials, Find My Past is primarily focused on research using resources from the United Kingdom.  Find My Past has an excellent collection of newpaper records, as well as census and other common sources."
+            },
+            {
+                paragraphText: "Find My Past also includes information about research related to British Royal genealogy.  Find My Past also has research resources for Australian, Irish, and other European sources.  Find My Past has both free and paid services."
             }
         ]
     }
