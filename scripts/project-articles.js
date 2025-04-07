@@ -11,6 +11,8 @@ const familyinfoButton = document.querySelector('#familyinfo');
 const onlinesourcesButton = document.querySelector('#onlinesources');
 const researchhelpsButton = document.querySelector('#researchhelps');
 
+const pageIdentifierName = document.querySelector("#page-identifier-name");
+
 homeButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "none");
     window.location.replace("project.html");
@@ -141,14 +143,20 @@ function populateArticles() {
         familyinfoButton.classList.add('active');
         onlinesourcesButton.classList.remove('active');
         researchhelpsButton.classList.remove('active');
+
+        pageIdentifierName.textContent = "Family Information";
     } else if (filter == "onlinesources") {
         familyinfoButton.classList.remove('active');
         onlinesourcesButton.classList.add('active');
         researchhelpsButton.classList.remove('active');
+
+        pageIdentifierName.textContent = "Online Sources";
     } else if (filter == "researchhelps") {
         familyinfoButton.classList.remove('active');
         onlinesourcesButton.classList.remove('active');
         researchhelpsButton.classList.add('active');
+
+        pageIdentifierName.textContent = "Research Helps";
     }
 
     const newArticles = articles.filter((article) => article.articleType == filter);
