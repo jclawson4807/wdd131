@@ -38,7 +38,7 @@ const articles = [
 function generateArticleParagraph(paragraph) {
     let returnString = "<p>";
 
-    if (Object.hasOwn(paragraph, "referenceURL") && Object.hasOwn(paragraph, "referenceText")) {
+    if (Object.hasOwn(paragraph, "referenceURL")) {
         returnString = returnString + `<a href="${paragraph.referenceURL}">${paragraph.referenceText}</a> `;
     }
 
@@ -55,6 +55,10 @@ function generateArticleSection(article) {
             </div>
             <div class="article-body">`;
 
+    if (Object.hasOwn(article, "articleImage")) {
+        returnString = returnString + `<img src="images/${article.articleImage}" alt="${article.articleImageAlt}" width="300"></img> `;
+    }
+
     article.paragraphs.forEach(paragraph => {
         returnString = returnString + generateArticleParagraph(paragraph);
     });
@@ -66,30 +70,11 @@ function generateArticleSection(article) {
 
 const newArticles = articles.filter((article) => article.articleType == "OnlineSources");
 
-articles.forEach(article => {
-    console.log(1);
+newArticles.forEach(article => {
     let returnString = generateArticleSection(article);
 
     main.innerHTML = main.innerHTML + returnString;
 });
 
-// const productNameSelect = document.querySelector("#product-name");
-
-// productNameSelect.innerHTML = null;
-// const option = document.createElement("option");
-// option.disabled = true;
-// option.selected = true;
-// option.value = "";
-// option.innerHTML = "Select a product... &#9662";
-
-// productNameSelect.appendChild(option);
-
-// products.forEach(product => {
-//     const option = document.createElement("option");
-//     option.id = product.id;
-//     option.textContent = product.name;
-
-//     productNameSelect.appendChild(option);
-// });
 
 
