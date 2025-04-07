@@ -96,13 +96,13 @@ function generateArticleParagraph(paragraph) {
 function generateArticleSection(article) {
     let returnString = `<section class="article">
             <div class="article-header">
-                <img src="images/${article.authorImage}" alt="Author Image" width="100">
+                <img src="images/${article.authorImage}" alt="Author Image" width="100" loading="lazy">
                 <p><span class="article-title">${article.articleTitle}</span><span class="article-author">${article.authorName}</span></p>
             </div>
             <div class="article-body">`;
 
     if (Object.hasOwn(article, "articleImage")) {
-        returnString = returnString + `<img src="images/${article.articleImage}" alt="${article.articleImageAlt}" width="300"></img> `;
+        returnString = returnString + `<img src="images/${article.articleImage}" alt="${article.articleImageAlt}" width="300" loading="lazy"></img> `;
     }
 
     article.paragraphs.forEach(paragraph => {
