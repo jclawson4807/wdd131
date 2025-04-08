@@ -108,7 +108,7 @@ const articles = [
         articleImageAlt: "Grandma looking apprehensive while holding large garden shears",
         paragraphs: [
             {
-                paragraphText: "When my parents joined the Church of Jesus Christ of Latter-day Saints in the mid 1970s, the began doing recorded interviews with family members.  They wanted to learn the history of their families.  My mother worked for a time as a secretary, and would transcribe those recordings during her lunch break.  My parents produced several short family histories based on these interviews.  I have copies of some of these histories, and have read them many times.  There are family members I feel that I know, though we have never met."
+                paragraphText: "When my parents joined the Church of Jesus Christ of Latter-day Saints in the mid 1970s, they began doing recorded interviews with family members. My mother worked for a time as a secretary, and would transcribe these recordings during her lunch break.  My parents produced several short family histories based on these interviews.  I have copies of some of these histories, and have read them many times.  As a result, there are family members I feel that I know, though we have never met."
             },
             {
                 paragraphText: "When I was young, my parents invited me to partipate in a few of these interviews at family reunions.  Since then, I have conducted several interviews with members of my family, or with non-family members while helping others with research.  I have included some techniques that have helped make these interviews successful."
