@@ -98,6 +98,48 @@ const articles = [
                 paragraphText: "Find My Past also includes information about research related to British Royal genealogy.  Find My Past also has research resources for Australian, Irish, and other European sources.  Find My Past has both free and paid services."
             }
         ]
+    },
+    {
+        articleType: "familyinfo",
+        articleTitle: "Family History Interviews",
+        authorName: "James Clawson",
+        authorImage: "author-image.webp",
+        articleImage: "grandma-300-248.webp",
+        articleImageAlt: "Grandma looking apprehensive while holding large garden shears",
+        paragraphs: [
+            {
+                paragraphText: "When my parents joined the Church of Jesus Christ of Latter-day Saints in the mid 1970s, the began doing recorded interviews with family members.  They wanted to learn the history of their families.  My mother worked for a time as a secretary, and would transcribe those recordings during her lunch break.  My parents produced several short family histories based on these interviews.  I have copies of some of these histories, and have read them many times.  There are family members I feel that I know, though we have never met."
+            },
+            {
+                paragraphText: "When I was young, my parents invited me to partipate in a few of these interviews at family reunions.  Since then, I have conducted several interviews with members of my family, or with non-family members while helping others with research.  I have included some techniques that have helped make these interviews successful."
+            },
+            {
+                paragraphText: "1) Record these interviews, and take notes during the interview with follow up questions you need to ask, things you need to research, and significant names, dates, and places.  Once you are done, transcribe the audio as soon as possible.  Review the interview, and ask follow up questions in person, by video chat or phone, or by email as soon after the interview as you can.  This is particularly helpful when talking to people with memory problems."
+            },
+            {
+                paragraphText: "2) One very effective interview technique is to sit together and look at old photographs.  Ask the interview subject about who is in each picture, when the picture was taken, and what event was happening that led to the picture being taken.  I have found that if I take a picture of the photo using the Notes app on my phone, I can then list the names of the people in the picture and any other information I learn in the note.  I organize the notes into a folder with the name of the person being interviewed, and the interview date.  Photos can remind people of events, people, places and dates that they may not have thought of in the context of a general interview.  If there are multiple photos from the same event, go through those together so that you can get as much detail about the event as possible.  I have also found that when possible, reviewing and organizing the photos before the event can be very helpful, especially if I will have multiple interview opportunities with the same person.  In this situation, I try to focus my questions in my first interview on the person's childhood and immediate family.  I then move on to the person's courtship, dating, and marriage, then children, and then expand the discussion to moves, education, career, major accomplishments, etc. in subsequent interviews."
+            },
+            {
+                paragraphText: "3) Another effective interview technique is to send the person a list of questions before the interview.  I will often do this a month or two before we meet, and let the person find pictures, items with nostalgic value such as a weddeing dress or photos, pictures of family members or friends, high school yearbooks, etc.  This gives the person you are interviewing the chance to narrow the focus of the interview to the things he or she feels are most important.  This is most useful if you are traveling to see the person you are interviewing or the person is elderly or in moderately poor health, and you are likely to have only have one chance to do the interview."
+            },
+            {
+                paragraphText: "4) Interviewing family members requiries tact, patience, preparation, and in some cases - courage.  You may learn things about your family that you wish you had not learned.  You may also be told things that are no accurate, or are not complete.  It is important to capture all of the information you can, and then seek for sources to verify what you learn.  If you are aware of conflict or estrangement between family members, or groups of family members, tread carefully and be respectful."
+            },
+            {
+                paragraphText: "5) If possible, bring a laptop and a scanner capable of scanning original documents.  Flat bed scanners are perfect for large, flat documents like birth or death certificates, marriage records, etc.  Photo scanners with an auto feeder are wonderful for scanning boxes of photos.  Many scanners support slide and negative adapters which allow you to scan slides or photo negatives."
+            },
+            {
+                paragraphText: "6) If you are trying to prepare names for temple ordinaces, you will need sources for names, dates, major family events, family relationships, etc.  In this case, it is helpful to ask before the interview that original sources like birth and death certificates, marriage licenses, or other such documents be gathered so that you can review them."
+            },
+            {
+                paragraphText: "6) Offer to share the transcript of your interview, scans of original documents, and any photos you may take.  There are people I have met with who were not originally interested in talking to me, but were willing to talk once I offered to provide scanned copies of their pictures or other documents.  Scanning large photo collections can require a large time commitment, but doing so is often a rewarding project."
+            },
+            {
+                paragraphText: "If you prepare well, a family history interview can be a wonderful experience. I have been delighted by some of the things I have learned about the generations that went before me, and have developed much closer relationships with family members I have known for decades as we share tender, personal memories together.  I hope that you can have similar experiences with our own family."
+            }
+
+
+        ]
     }
 ]
 
