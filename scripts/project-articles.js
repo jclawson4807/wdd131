@@ -105,7 +105,7 @@ const articles = [
         authorName: "James Clawson",
         authorImage: "author-image.webp",
         articleImage: "grandma-300-248.webp",
-        articleImageAlt: "Grandma looking apprehensive while holding large garden shears",
+        articleImageAlt: "Grandma looking amused while holding large garden shears",
         paragraphs: [
             {
                 paragraphText: "When my parents joined the Church of Jesus Christ of Latter-day Saints in the mid 1970s, they began doing recorded interviews with family members. My mother worked for a time as a secretary, and would transcribe these recordings during her lunch break.  My parents produced several short family histories based on these interviews.  I have copies of some of these histories, and have read them many times.  As a result, there are family members I feel that I know, though we have never met."
