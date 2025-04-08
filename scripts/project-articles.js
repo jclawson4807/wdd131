@@ -167,6 +167,8 @@ const articles = [
                             "Have you ever had any 'great adventures'?  If so, tell me about them.",
                             "What are your fondest memories?",
                             "Who were your best friends growing up, and what kinds of experiences did you share?",
+                            "Is faith or religion important in your life?  If so, what is your relgious affiliation and how did you develop your faith?  How has your faith influenced your life and changed your character?",
+                            "What is your educational background, and how did your education prepare you for your life and profession?"
                         ]
                     },
                     {
@@ -191,7 +193,7 @@ const articles = [
                             "Did one or both of your parents help you learn to drive a car?",
                             "Did one or both of your parents help you learn to work?",
                             "What were the lessons or skills you learned from your parents?",
-                            "Do you have any pictures your parents?  (If so, go through the picture questions listed in that section.)",
+                            "Do you have any pictures your parents?  (If so, see Item 2 in 'Family History Interviews - Part 1')",
                         ]
                     },
                     {
@@ -207,7 +209,6 @@ const articles = [
                             "What are your favorite memories of your siblings?",
                             "What kinds of games did you play together as a family?",
                             "What were your siblings' talents and interests?",
-                            "What were your siblings' talents and interests?",
                             "If either of them have passed away, when and where did they die?",
                             "Do you know the names of your grandparents or great-grandparents?  If so, please share those as well.",
                             "What are your earliest memories of your parents?",
@@ -218,6 +219,22 @@ const articles = [
                             "Did one or both of your parents help you learn to drive a car?",
                             "Did one or both of your parents help you learn to work?",
                             "What were the lessons or skills you learned from your parents?",
+                        ]
+                    },
+                    {
+                        listTitle: "Marriage and Family",
+                        listType: "Numbered",
+                        listItems: [
+                            "Are you or were you ever married?",
+                            "If so, what is the full name, birth date, and birth place of your spouse?",
+                            "How did you two meet?",
+                            "What was your courtship like? Can you remember any special experiences, dates, or moments you would like to share?",
+                            "When and where did you get married?",
+                            "What were the wedding and reception like?  Who attended?",
+                            "Where did you live after you got married?",
+                            "Did you have any children?",
+                            "What is the name, gender, and birthdate of each of your children?",
+                            "Have your children married?  If so, who did they marry and when?",
                         ]
                     }
                 ]
