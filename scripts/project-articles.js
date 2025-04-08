@@ -160,7 +160,13 @@ const articles = [
                             "What was your full given name when you are born?",
                             "Have you ever been known by any other names, including nicknames?",
                             "What is your birth date?",
-                            "Where were you born?"
+                            "Where were you born?",
+                            "What are your talents and interests?",
+                            "Have you ever experienced any major health issues?  If so, will you share that experience?",
+                            "Where have you lived, and why did you move there?  Talk about your experiences in each place you have lived.",
+                            "Have you ever had any 'great adventures'?  If so, tell me about them.",
+                            "What are your fondest memories?",
+                            "Who were your best friends growing up, and what kinds of experiences did you share?",
                         ]
                     },
                     {
@@ -179,7 +185,39 @@ const articles = [
                             "Do you know the names of your grandparents or great-grandparents?  If so, please share those as well.",
                             "What are your earliest memories of your parents?",
                             "What are your favorite memories of your parents?",
-                            "How did your parents meet?"
+                            "How did your parents meet?",
+                            "Did you get along well with your parents?",
+                            "How did your parents teach or instruct in their home?",
+                            "Did one or both of your parents help you learn to drive a car?",
+                            "Did one or both of your parents help you learn to work?",
+                            "What were the lessons or skills you learned from your parents?",
+                            "Do you have any pictures your parents?  (If so, go through the picture questions listed in that section.)",
+                        ]
+                    },
+                    {
+                        listTitle: "Siblings",
+                        listType: "Numbered",
+                        listItems: [
+                            "Do you have any siblings?",
+                            "What is the full name, gender, birth date, and birth place of each of your siblings?",
+                            "If any of your siblings are deceased, what is the death date of each deceased sibling?",
+                            "If any of your siblings are married, what is the marriage date of each married sibling, along with the name of his or her spouse?",
+                            "If any of your siblings have children, what is the name and birth date of each niece or nephew?",
+                            "Did you get along well with your siblings?",
+                            "What are your favorite memories of your siblings?",
+                            "What kinds of games did you play together as a family?",
+                            "What were your siblings' talents and interests?",
+                            "What were your siblings' talents and interests?",
+                            "If either of them have passed away, when and where did they die?",
+                            "Do you know the names of your grandparents or great-grandparents?  If so, please share those as well.",
+                            "What are your earliest memories of your parents?",
+                            "What are your favorite memories of your parents?",
+                            "How did your parents meet?",
+                            "Did you get along well with your parents?",
+                            "How did your parents teach or instruct in their home?",
+                            "Did one or both of your parents help you learn to drive a car?",
+                            "Did one or both of your parents help you learn to work?",
+                            "What were the lessons or skills you learned from your parents?",
                         ]
                     }
                 ]
