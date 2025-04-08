@@ -101,11 +101,11 @@ const articles = [
     },
     {
         articleType: "familyinfo",
-        articleTitle: "Family History Interviews",
+        articleTitle: "Family History Interviews - Part 1",
         authorName: "James Clawson",
         authorImage: "author-image.webp",
-        articleImage: "grandma-300-248.webp",
-        articleImageAlt: "Grandma looking amused while holding large garden shears",
+        articleImage: "family-photos-300-234.webp",
+        articleImageAlt: "Pile of family photos",
         paragraphs: [
             {
                 paragraphText: "When my parents joined the Church of Jesus Christ of Latter-day Saints in the mid 1970s, they began doing recorded interviews with family members. My mother worked for a time as a secretary, and would transcribe these recordings during her lunch break.  My parents produced several short family histories based on these interviews.  I have copies of some of these histories, and have read them many times.  As a result, there are family members I feel that I know, though we have never met."
@@ -135,10 +135,55 @@ const articles = [
                 paragraphText: "6) Offer to share the transcript of your interview, scans of original documents, and any photos you may take.  There are people I have met with who were not originally interested in talking to me, but were willing to talk once I offered to provide scanned copies of their pictures or other documents.  Scanning large photo collections can require a large time commitment, but doing so is often a rewarding project."
             },
             {
+                paragraphText: "7) If you do not speak the same language as the person you are interviewing, bring a translator along with you.  This may be important even if the person is bilingual, as some original source documents may be written or printed in a language you do not speak, or which the person you are interviewing can not read."
+            },
+            {
                 paragraphText: "If you prepare well, a family history interview can be a wonderful experience. I have been delighted by some of the things I have learned about the generations that went before me, and have developed much closer relationships with family members I have known for decades as we share tender, personal memories together.  I hope that you can have similar experiences with our own family."
             }
-
-
+        ]
+    },
+    {
+        articleType: "familyinfo",
+        articleTitle: "Family History Interviews - Part 2",
+        authorName: "James Clawson",
+        authorImage: "author-image.webp",
+        articleImage: "grandma-300-248.webp",
+        articleImageAlt: "Grandma looking amused while holding large garden shears",
+        paragraphs: [
+            {
+                paragraphText: "In my last article, I wrote about techniques that may help you have a successful family history interview.  In this article, I will provide a few lists of questions you may ask during an interview, organized by category.  I will add additional lists of techniques and questions in later articles.  These lists may be adapted as needed.  For example, if a family member was adopted, you may want to ask additional questions about the person's adoption date, birth name, birth family, etc.",
+                lists: [
+                    {
+                        listTitle: "Personal Identity and History",
+                        listType: "Numbered",
+                        listItems: [
+                            "What was your full given name when you are born?",
+                            "Have you ever been known by any other names, including nicknames?",
+                            "What is your birth date?",
+                            "Where were you born?"
+                        ]
+                    },
+                    {
+                        listTitle: "Parents",
+                        listType: "Numbered",
+                        listItems: [
+                            "What is your father's full name?",
+                            "Did your father ever use any other names, including nicknames?",
+                            "When and where was your father born?",
+                            "What was your mother's full name?",
+                            "What was your mother's maiden name?",
+                            "Did your mother ever use any other names, including nicknames?",
+                            "When and where was your mother born?",
+                            "When and where were they married?",
+                            "If either of them have passed away, when and where did they die?",
+                            "Do you know the names of your grandparents or great-grandparents?  If so, please share those as well.",
+                            "What are your earliest memories of your parents?",
+                            "What are your favorite memories of your parents?",
+                            "How did your parents meet?"
+                        ]
+                    }
+                ]
+            }
         ]
     }
 ]
