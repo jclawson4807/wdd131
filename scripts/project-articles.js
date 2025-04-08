@@ -151,7 +151,7 @@ const articles = [
         articleImageAlt: "Grandma looking amused while holding large garden shears",
         paragraphs: [
             {
-                paragraphText: "In my last article, I wrote about techniques that may help you have a successful family history interview.  In this article, I will provide a few lists of questions you may ask during an interview, organized by category.  I will add additional lists of techniques and questions in later articles.  These lists may be adapted as needed.  For example, if a family member was adopted, you may want to ask additional questions about the person's adoption date, birth name, birth family, etc.",
+                paragraphText: "In my last article, I wrote about techniques that may help you have a successful family history interview.  In this article, I will provide a few lists of questions you may ask during an interview, organized by category.  These lists may be adapted as needed.  For example, if a family member was adopted, you may want to ask additional questions about the person's adoption date, birth name, birth family, etc.  If the person you are interviewing has published articles or books, you can talk about their motivation for writing and publishing those works.  If the person is a talented musician, you may want to record the person performing.  I will add additional lists of techniques and questions in later articles.",
                 lists: [
                     {
                         listTitle: "Personal Identity and History",
@@ -188,6 +188,30 @@ const articles = [
     }
 ]
 
+function generateParagraphList(list) {
+    let returnString = `<h3>${list.listTitle}</h3>`;
+
+    if (list.listType == "Numbered") {
+        returnString = returnString + "<ol>";
+    }
+    else {
+        returnString = returnString + "<ul>";
+    }
+
+    list.listItems.forEach(listItem => {
+        returnString = returnString + `<li>${listItem}</li>`;
+    });
+
+    if (list.listType == "Numbered") {
+        returnString = returnString + "</ol>";
+    }
+    else {
+        returnString = returnString + "</ul>";
+    }
+
+    return returnString;
+}
+
 function generateArticleParagraph(paragraph) {
     let returnString = "<p>";
 
@@ -195,7 +219,15 @@ function generateArticleParagraph(paragraph) {
         returnString = returnString + `<a href="${paragraph.referenceURL}" target="blank">${paragraph.referenceText}</a> `;
     }
 
-    returnString = returnString + `${paragraph.paragraphText}</p>`;
+    returnString = returnString + `${paragraph.paragraphText}`;
+
+    if (Object.hasOwn(paragraph, "lists")) {
+        paragraph.lists.forEach(listItem => {
+            returnString = returnString + generateParagraphList(listItem);
+        });
+    }
+
+    returnString = returnString + "</p>";
 
     return returnString;
 }
