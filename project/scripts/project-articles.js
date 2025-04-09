@@ -261,7 +261,23 @@ const articles = [
                             "<a href='https://www.myheritage.com' target='blank'>MyHeritage.com<span class='required-asterisk'>*</span></a>",
                             "<a href='https://www.findmypast.com' target='blank'>Findmypast.com<span class='required-asterisk'>*</span></a>",
                             "<a href='https://www.genesreunited.co.uk' target='blank'>Genesreunited.co.uk</a>",
-                            "<a href='https://www.onegreatfamily.com' target='blank'>Onegreatfamily.com</a>"
+                            "<a href='https://www.onegreatfamily.com' target='blank'>Onegreatfamily.com</a>",
+                            "<a href='hhttps://billiongraves.com' target='blank'>Billiongraves.com<span class='required-asterisk'>*</span></a>",
+                            "<a href='https://www.findagrave.com' target='blank'>Findagrave.com<span class='required-asterisk'>*</span></a>",
+                            "<a href='https://www.americanancestors.org' target='blank'>Americanancestors.org<span class='required-asterisk'>*</span></a>",
+                            "<a href='https://archives.gov' target='blank'>Archives.gov</a>",
+                            "<a href='https://dar.org' target='blank'>Daughters of the American Revolution</a>"
+                        ]
+                    },
+                    {
+                        listTitle: "Family History Software",
+                        listType: "Unnumbered",
+                        listItems: [
+                            "<a href='https://www.rootsmagic.com' target='blank'>RootsMagic<span class='required-asterisk'>*</span></a>",
+                            "<a href='https://www.syniumsoftware.com/macfamilytree' target='blank'>MacFamilyTree<span class='required-asterisk'>*</span></a>",
+                            "<a href='https://www.mackiev.com/ftm/index.html' target='blank'>Family Tree Maker</a>",
+                            "<a href='https://legacyfamilytree.com' target='blank'>Legacy Family Tree Maker</a>",
+                            "<a href='https://www.family-historian.co.uk' target='blank'>Family Historian</a>"
                         ]
                     }
                 ]
