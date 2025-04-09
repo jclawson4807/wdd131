@@ -11,8 +11,13 @@ const familyinfoButton = document.querySelector('#familyinfo');
 const onlinesourcesButton = document.querySelector('#onlinesources');
 const researchhelpsButton = document.querySelector('#researchhelps');
 
+const pageIdentifierName = document.querySelector("#page-identifier-name");
+
+const main = document.querySelector("main");
+
 homeButton.addEventListener('click', () => {
     localStorage.setItem("articleFilter", "none");
+    window.location.replace("project.html");
 });
 
 familyinfoButton.addEventListener('click', () => {
@@ -30,16 +35,16 @@ researchhelpsButton.addEventListener('click', () => {
     window.location.replace("project-articles.html");
 });
 
-const sendMeResearchTipsButton = document.querySelector("#send-me-research-tips");
+if (window.localStorage.getItem("emailAddress") === null) {
+    window.location.replace("project.html");
+}
+else {
+    let storedEmailAddress = window.localStorage.getItem("emailAddress");
 
-sendMeResearchTipsButton.addEventListener('click', () => {
+    const emailAddressSpan = document.querySelector("#email-address");
+    emailAddressSpan.textContent = storedEmailAddress;
 
-    const emailAddressInput = document.querySelector("#email");
+};
 
-    const emailAddress = emailAddressInput.value.trim();
 
-    localStorage.setItem("emailAddress", emailAddress);
-
-    window.location.replace("joined-mailing-list.html");
-});
 
