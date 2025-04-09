@@ -177,7 +177,7 @@ const articles = [
                             "Have you ever had any 'great adventures'?  If so, tell me about them.",
                             "What are your fondest memories?",
                             "Who were your best friends growing up, and what kinds of experiences did you share?",
-                            "Is faith or religion important in your life?  If so, what is your relgious affiliation and how did you develop your faith?  How has your faith influenced your life and changed your character?",
+                            "Is faith or religion important in your life?  If so, what is your religious affiliation and how did you develop your faith?  How has your faith influenced your life and changed your character?",
                             "What is your educational background, and how did your education prepare you for your life and profession?"
                         ]
                     },
