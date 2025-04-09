@@ -240,6 +240,33 @@ const articles = [
                 ]
             }
         ]
+    },
+    {
+        articleType: "researchhelps",
+        articleTitle: "Online Family History Resources",
+        authorName: "James Clawson",
+        authorImage: "author-image.webp",
+        articleImage: "family-search-homepage-300-248.webp",
+        articleImageAlt: "Family Search Homepage",
+        paragraphs: [
+            {
+                paragraphText: "The following are categorized lists of online resources for family history research.  These lists will be updated often. If you have suggestions for additional resources we should include in these lists, please sign up for our newsletter, and use the email address included with each issue to contact us.  We will review all suggested resources.  If you are a software vendor, and would like us to test your tools and write a review, we are happy to do so.",
+                lists: [
+                    {
+                        listTitle: "Common Research Sites",
+                        listType: "Unnumbered",
+                        listItems: [
+                            "<a href='https://www.familysearch.org' target='blank'>FamilySearch</a>",
+                            "<a href='https://www.ancestry.com' target='blank'>Ancestry.com</a>",
+                            "<a href='https://www.myheritage.com' target='blank'>MyHeritage.com</a>",
+                            "<a href='https://www.findmypast.com' target='blank'>Findmypast.com</a>",
+                            "<a href='https://www.genesreunited.co.uk' target='blank'>Genesreunited.co.uk</a>",
+                            "<a href='https://www.onegreatfamily.com' target='blank'>Onegreatfamily.com</a>"
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]
 

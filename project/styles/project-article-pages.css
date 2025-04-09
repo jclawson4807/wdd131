@@ -22,6 +22,7 @@
     --figure-width: 250px;
 
     --highlight-text-color: #f3f437;
+    --required-red: #9c2c13;
 }
 
 * {
@@ -285,6 +286,10 @@ section {
 .article-body ol,
 .article-body ul {
     margin: 0 0 10px 30px;
+}
+
+.required-asterisk {
+    color: var(--required-red);
 }
 
 /* large view navigation ************************************/
