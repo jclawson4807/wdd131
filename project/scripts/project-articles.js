@@ -98,7 +98,7 @@ const articles = [
             {
                 referenceURL: "https://www.findmypast.com",
                 referenceText: "Find My Past",
-                paragraphText: "is a family history tree and research site.  While it incldues some US research materials, Find My Past is primarily focused on research using resources from the United Kingdom.  Find My Past has an excellent collection of newpaper records, as well as census and other common sources."
+                paragraphText: "is a family history tree and research site.  While it includes some US research materials, Find My Past is primarily focused on research using resources from the United Kingdom.  Find My Past has an excellent collection of newspaper records, as well as census and other common sources."
             },
             {
                 paragraphText: "Find My Past also includes information about research related to British Royal genealogy.  Find My Past also has research resources for Australian, Irish, and other European sources.  Find My Past has both free and paid services."
