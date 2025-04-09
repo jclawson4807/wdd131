@@ -13,8 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Domine:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/project-article-pages.css">
-    <script src="scripts/project-articles.js" defer></script>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/referenced-materials.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 </head>
 
@@ -33,15 +33,26 @@
                 <li><a href="#" title="Research Helps" id="researchhelps">Research Helps</a></li>
             </ul>
         </nav>
-        <div id="page-identifier">
-            <h2 id="page-identifier-name">Online Sources</h2>
-        </div>
     </header>
     <main>
+        <picture>
+            <source srcset="images/fhd-hero-800.webp" media="(min-width: 800px)">
+            <source srcset=" images/fhd-hero-500.webp" media="(min-width: 500px)">
+            <img src="images/fhd-hero-300.webp" alt="Site hero image - tree with blue leaves and signs" width="300">
+        </picture>
+        <section>
+            <h2>Referenced Materials
+            </h2>
+            <p>I created the blue true image using Grok. The stack of pictures image used in the first common questions
+                button and on the articles page, as well as the picture of grandma with lawn sheers, was purchased on
+                envato.com. All other images are screenshots from the home pages of referenced sites, or are composed
+                using those screenshots. All article text was written by James Clawson, the student who created this
+                website.</p>
+
+        </section>
     </main>
     <footer>
-        <p>@<span id="currentyear"></span> | Family Heritage Discovery | <a href="referenced-materials.html">Referenced
-                Materials</a> </p>
+        <p>@<span id="currentyear"></span> | Family Heritage Discovery </p>
         <p id="lastModified"></p>
     </footer>
 </body>

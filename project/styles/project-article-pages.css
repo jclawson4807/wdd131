@@ -292,6 +292,16 @@ section {
     color: var(--required-red);
 }
 
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 /* large view navigation ************************************/
 @media (min-width: 615px) {
     h1 {

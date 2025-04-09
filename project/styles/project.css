@@ -300,6 +300,16 @@ footer p {
     padding: 5px;
 }
 
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .highlight {
     color: var(--highlight-text-color);
 }
