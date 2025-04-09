@@ -44,8 +44,10 @@ const articles = [
         articleTitle: "Family Search",
         authorName: "James Clawson",
         authorImage: "author-image.webp",
-        articleImage: "family-search-homepage-300-248.webp",
+        articleImage: "family-search-homepage-300-217.webp",
         articleImageAlt: "Family Search homepage",
+        articleImageWidth: 300,
+        articleImageHeight: 217,
         paragraphs: [
             {
                 referenceURL: "https://www.familysearch.org",
@@ -70,6 +72,8 @@ const articles = [
         authorImage: "author-image.webp",
         articleImage: "american-ancestors-homepage-300-247.webp",
         articleImageAlt: "American Ancestors",
+        articleImageWidth: 300,
+        articleImageHeight: 247,
         paragraphs: [
             {
                 referenceURL: "https://www.americanancestors.org",
@@ -88,6 +92,8 @@ const articles = [
         authorImage: "author-image.webp",
         articleImage: "find-my-past-homepage-300-247.webp",
         articleImageAlt: "Find My Past",
+        articleImageWidth: 300,
+        articleImageHeight: 247,
         paragraphs: [
             {
                 referenceURL: "https://www.findmypast.com",
@@ -106,6 +112,8 @@ const articles = [
         authorImage: "author-image.webp",
         articleImage: "family-photos-300-234.webp",
         articleImageAlt: "Pile of family photos",
+        articleImageWidth: 300,
+        articleImageHeight: 234,
         paragraphs: [
             {
                 paragraphText: "When my parents joined the Church of Jesus Christ of Latter-day Saints in the mid 1970s, they began doing recorded interviews with family members. My mother worked for a time as a secretary, and would transcribe these recordings during her lunch break.  My parents produced several short family histories based on these interviews.  I have copies of some of these histories, and have read them many times.  As a result, there are family members I feel that I know, though we have never met."
@@ -149,6 +157,8 @@ const articles = [
         authorImage: "author-image.webp",
         articleImage: "grandma-300-248.webp",
         articleImageAlt: "Grandma looking amused while holding large garden shears",
+        articleImageWidth: 300,
+        articleImageHeight: 248,
         paragraphs: [
             {
                 paragraphText: "In my last article, I wrote about techniques that may help you have a successful family history interview.  In this article, I will provide a few lists of questions you may ask during an interview, organized by category.  These lists may be adapted as needed.  For example, if a family member was adopted, you may want to ask additional questions about the person's adoption date, birth name, birth family, etc.  If the person you are interviewing has published articles or books, you can talk about their motivation for writing and publishing those works.  If the person is a talented musician, you may want to record the person performing.  I will add additional lists of techniques and questions in later articles.",
@@ -246,8 +256,10 @@ const articles = [
         articleTitle: "Online Family History Resources",
         authorName: "James Clawson",
         authorImage: "author-image.webp",
-        articleImage: "family-search-homepage-300-248.webp",
+        articleImage: "family-search-homepage-300-217.webp",
         articleImageAlt: "Family Search Homepage",
+        articleImageWidth: 300,
+        articleImageHeight: 217,
         paragraphs: [
             {
                 paragraphText: "The following are categorized lists of online resources for family history research.  These lists will be updated often. Note that resource names followed by a red asterisk have been tested and verified by our staff.  If you have suggestions for additional resources we should include in these lists, please sign up for our newsletter, and use the email address included with each issue to contact us.  We will review all suggested resources.  If you are a software vendor, and would like us to test your tools and write a review, we are happy to do so.",
@@ -339,7 +351,7 @@ function generateArticleSection(article) {
             <div class="article-body">`;
 
     if (Object.hasOwn(article, "articleImage")) {
-        returnString = returnString + `<img src="images/${article.articleImage}" alt="${article.articleImageAlt}" width="300" loading="lazy"></img> `;
+        returnString = returnString + `<img src="images/${article.articleImage}" alt="${article.articleImageAlt}" width="${article.articleImageWidth}" height="${article.articleImageHeight}" loading="lazy"></img> `;
     }
 
     article.paragraphs.forEach(paragraph => {
