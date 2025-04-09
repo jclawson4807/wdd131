@@ -272,19 +272,6 @@ section img {
     margin: auto;
 }
 
-.domine-font-sample {
-    font-family: var(--body-font), serif;
-}
-
-.roboto-font-sample {
-    font-family: var(--header-font), sans-serif;
-}
-
-.ballet-font-sample {
-    font-family: var(--cursive-sample-font), 'Brush Script MT',
-        cursive;
-}
-
 #fhdlogo {
     width: 100%;
     margin: 20px auto;
