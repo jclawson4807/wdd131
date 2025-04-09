@@ -345,7 +345,7 @@ function generateArticleParagraph(paragraph) {
 function generateArticleSection(article) {
     let returnString = `<section class="article">
             <div class="article-header">
-                <img src="images/${article.authorImage}" alt="Author Image" width="100" loading="lazy">
+                <img src="images/${article.authorImage}" alt="Author Image" width="50" height="50" loading="lazy">
                 <p><span class="article-title">${article.articleTitle}</span><span class="article-author">${article.authorName}</span></p>
             </div>
             <div class="article-body">`;
