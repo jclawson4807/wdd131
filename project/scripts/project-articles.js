@@ -9,6 +9,7 @@ hamButton.addEventListener('click', () => {
 const homeButton = document.querySelector('#home');
 const familyinfoButton = document.querySelector('#familyinfo');
 const onlinesourcesButton = document.querySelector('#onlinesources');
+const toolsButton = document.querySelector('#tools');
 const researchhelpButton = document.querySelector('#researchhelp');
 
 const pageIdentifierName = document.querySelector("#page-identifier-name");
@@ -30,10 +31,15 @@ onlinesourcesButton.addEventListener('click', () => {
     populateArticles();
 });
 
-researchhelpButton.addEventListener('click', () => {
-    localStorage.setItem("articleFilter", "researchhelps");
+toolsButton.addEventListener('click', () => {
+    localStorage.setItem("articleFilter", "tools");
 
     populateArticles();
+});
+
+researchhelpButton.addEventListener('click', () => {
+    localStorage.setItem("articleFilter", "none");
+    window.location.replace("request-research-help.html");
 });
 
 const main = document.querySelector("main");
@@ -252,7 +258,7 @@ const articles = [
         ]
     },
     {
-        articleType: "researchhelps",
+        articleType: "tools",
         articleTitle: "Online Family History Resources",
         authorName: "James Clawson",
         authorImage: "author-image.webp",
@@ -371,21 +377,21 @@ function populateArticles() {
     if (filter == "familyinfo") {
         familyinfoButton.classList.add('active');
         onlinesourcesButton.classList.remove('active');
-        researchhelpButton.classList.remove('active');
+        toolsButton.classList.remove('active');
 
         pageIdentifierName.textContent = "Family Information";
     } else if (filter == "onlinesources") {
         familyinfoButton.classList.remove('active');
         onlinesourcesButton.classList.add('active');
-        researchhelpButton.classList.remove('active');
+        toolsButton.classList.remove('active');
 
         pageIdentifierName.textContent = "Online Sources";
-    } else if (filter == "researchhelps") {
+    } else if (filter == "tools") {
         familyinfoButton.classList.remove('active');
         onlinesourcesButton.classList.remove('active');
-        researchhelpButton.classList.add('active');
+        toolsButton.classList.add('active');
 
-        pageIdentifierName.textContent = "Research Helps";
+        pageIdentifierName.textContent = "Tools";
     }
 
     const newArticles = articles.filter((article) => article.articleType == filter);
