@@ -44,12 +44,15 @@
         <section>
             <h2>Request Research Help
             </h2>
-            <p>Though our volunteers are limited in how many research projects they can work on at any give time, we
+            <p>Though our volunteers are limited in how many research projects they can work on at any given time, we
                 are happy to assist you with difficult research problems. Please use the form below to tell us about the
                 research subject you are having difficulty finding. Each user may only have one active research
                 request at a time, and users are limited to two requests per year at this time. Submissions are
                 processed in the order received. We will review your submission and respond as quickly as possible.
             </p>
+            <p>When entering place names, please be as specific as possible. If you know a full street address, please
+                enter that. If you know the country, state, and city, please enter that information in that order. If
+                you know additional information, such as a hospital name, enter that after the address.</p>
             <p>Please note the Other Sources text area. Please let us know about any other sources you have for
                 this individual. Also let us know if you have searched for sources you have been unable to find.
             </p>
@@ -74,9 +77,9 @@
                         <div>Gender</div>
                         <label><input type="radio" name="rs-gender" value="male">Male</label>
                         <label><input type="radio" name="rs-gender" value="female">Female</label>
-                        <label>Date of Birth <input type="date" name="rs-date-of-birth"></label>
-                        <label>Date of Marriage <input type="date" name="rs-date-of-marriage"></label>
-                        <label>Date of Death <input type="date" name="rs-date-of-death"></label>
+                        <label>Year of Birth <input type="number" name="rs-year-of-birth"></label>
+                        <label>Year of Marriage <input type="number" name="rs-year-of-marriage"></label>
+                        <label>Year of Death <input type="number" name="rs-year-of-death"></label>
                         <label>Place of Birth <input type="text" name="rs-birthplace"></label>
                         <label>Place of Marriage <input type="text" name="rs-marriageplace"></label>
                         <label>Place of Death <input type="text" name="rs-deathplace"></label>
@@ -93,6 +96,7 @@
                     <fieldset>
                         <legend>Sources</legend>
                         <div>Please indicate any source records you have found for this individual.</div>
+                        <label>Date of Last Source Search <input type="date" name="rs-date-last-source-search"></label>
                         <label><input type="checkbox" name="birth-certificate" value="yes">Birth Certificate</label>
                         <label><input type="checkbox" name="death-certificate" value="yes">Death Certificate</label>
                         <label><input type="checkbox" name="marriage-certificate" value="yes">Marriage
