@@ -9,6 +9,7 @@
     --box-shadow-color: #0000002e;
     --main-max-width: 800px;
     --highlight-text-color: #f3f437;
+    --required-red: #9c2c13;
 }
 
 * {
@@ -149,7 +150,12 @@ main picture img {
     width: 100%;
 }
 
-#cta-container {
+.required-asterisk {
+    color: var(--required-red);
+}
+
+#cta-container,
+#request-research-help-container {
     display: block;
     width: 100%;
     display: flex;
@@ -168,19 +174,34 @@ main picture img {
     text-align: justify;
 }
 
-#cta-form {
+#cta-form,
+#request-research-help-form {
     padding: 1.5rem;
     margin: 0;
     width: 100%;
     margin: 0 auto;
 }
 
-#cta-form label {
+#request-research-help-container fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+#request-research-help-container legend {
+    color: var(--header-footer-background-color);
+    padding: 0 .5rem;
+}
+
+#cta-form label,
+#request-research-help-container label {
     display: block;
     text-align: center;
     font-size: 1.1rem;
     min-height: 44px;
     width: 100%;
+    margin: 15px auto;
 }
 
 #cta-form input[type="email"] {
@@ -193,7 +214,30 @@ main picture img {
     margin: 8px auto;
 }
 
-#cta-form input[type="button"] {
+#request-research-help-container input[type="text"],
+#request-research-help-container input[type="tel"],
+#request-research-help-container input[type="email"],
+#request-research-help-container input[type="url"],
+#request-research-help-container input[type="date"],
+#request-research-help-container select,
+#request-research-help-container input[type="number"] {
+    display: block;
+    width: 100%;
+    border: thin solid var(--box-shadow-color);
+    border-radius: 6px;
+    height: 36px;
+    padding: 8px 12px 8px 12px;
+    margin: 8px auto;
+    appearance: none;
+}
+
+#request-research-help-container input[type="radio"],
+#request-research-help-container input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+#cta-form input[type="button"],
+#request-research-help-container input[type="submit"] {
     display: block;
     border: none;
     background-image: linear-gradient(var(--dark-blue-emphasis-color), var(--header-footer-background-color));
@@ -339,7 +383,8 @@ footer a:hover {
         text-align: left;
     }
 
-    #cta-container {
+    #cta-container,
+    #request-research-help-container {
         flex-direction: row;
         padding: 0;
         max-width: 800px;
@@ -348,18 +393,21 @@ footer a:hover {
         border-bottom: none;
     }
 
-    #cta-container p {
+    #cta-container p,
+    #request-research-help-container p {
         width: 50%;
         display: inline-block;
     }
 
-    #cta-form {
+    #cta-form,
+    #request-research-help-form {
         padding: 1.5rem;
         margin: 0;
         width: 50%;
     }
 
-    #cta-form label {
+    #cta-form label,
+    #request-research-help-container label {
         text-align: left;
     }
 
