@@ -166,7 +166,8 @@ main picture img {
     border-bottom: 1px solid var(--dark-blue-emphasis-color);
 }
 
-#cta-container p {
+#cta-container p,
+#request-research-help-container p {
     width: 100%;
     padding: 1.5rem;
     display: block;
@@ -183,7 +184,7 @@ main picture img {
 }
 
 #request-research-help-container fieldset {
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 1rem;
@@ -226,6 +227,16 @@ main picture img {
     border: thin solid var(--box-shadow-color);
     border-radius: 6px;
     height: 36px;
+    padding: 8px 12px 8px 12px;
+    margin: 8px auto;
+    appearance: none;
+}
+
+#request-research-help-container textarea {
+    display: block;
+    width: 100%;
+    border: thin solid var(--box-shadow-color);
+    border-radius: 6px;
     padding: 8px 12px 8px 12px;
     margin: 8px auto;
     appearance: none;
