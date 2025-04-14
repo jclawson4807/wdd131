@@ -205,6 +205,10 @@ main picture img {
     margin: 15px auto;
 }
 
+#request-research-help-form div {
+    text-align: center;
+}
+
 #cta-form input[type="email"] {
     display: block;
     width: 100%;
@@ -428,6 +432,10 @@ footer a:hover {
         padding: 1.5rem;
         margin: 0;
         width: 100%;
+    }
+
+    #request-research-help-form div {
+        text-align: left;
     }
 
     #cta-form label,
