@@ -394,8 +394,7 @@ footer a:hover {
         text-align: left;
     }
 
-    #cta-container,
-    #request-research-help-container {
+    #cta-container {
         flex-direction: row;
         padding: 0;
         max-width: 800px;
@@ -404,17 +403,31 @@ footer a:hover {
         border-bottom: none;
     }
 
-    #cta-container p,
-    #request-research-help-container p {
+    #request-research-help-container {
+        flex-direction: row;
+        padding: 0;
+        max-width: 400px;
+        border-radius: 0.5rem;
+        box-shadow: 1px 1px 4px var(--box-shadow-color);
+        border-bottom: none;
+        margin: auto;
+    }
+
+    #cta-container p {
         width: 50%;
         display: inline-block;
     }
 
-    #cta-form,
-    #request-research-help-form {
+    #cta-form {
         padding: 1.5rem;
         margin: 0;
         width: 50%;
+    }
+
+    #request-research-help-form {
+        padding: 1.5rem;
+        margin: 0;
+        width: 100%;
     }
 
     #cta-form label,

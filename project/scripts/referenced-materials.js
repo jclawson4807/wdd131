@@ -9,7 +9,7 @@ hamButton.addEventListener('click', () => {
 const homeButton = document.querySelector('#home');
 const familyinfoButton = document.querySelector('#familyinfo');
 const onlinesourcesButton = document.querySelector('#onlinesources');
-const researchhelpsButton = document.querySelector('#researchhelps');
+const researchhelpsButton = document.querySelector('#researchhelp');
 
 const pageIdentifierName = document.querySelector("#page-identifier-name");
 
